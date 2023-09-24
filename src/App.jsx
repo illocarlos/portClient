@@ -1,18 +1,22 @@
-import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navigation from './components/Navigation/Navigation'
+import AppRoutes from './routes/AppRoutes'
+
+
 
 function App() {
 
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <h1>OPLAAAAAAAAAA</h1>
-        <Navigation></Navigation>
-      </div>
-    </>
+
+    <div>
+      <h1>OPLAAAAAAAAAA</h1>
+      <Navigation />
+      <AppRoutes />
+
+    </div>
+
   )
 }
 

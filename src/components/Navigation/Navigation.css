@@ -1,0 +1,23 @@
+.buttContact {
+
+    margin-right: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+
+}
+
+.buttContact a {
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: none;
+    background-color: red;
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+
+}
