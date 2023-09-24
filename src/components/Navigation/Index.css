@@ -1,13 +1,14 @@
-.buttContact {
+.Index {
 
     margin-right: 30px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: end;
 
+
 }
 
-.buttContact a {
+.Index a {
     position: fixed;
     display: flex;
     flex-flow: row nowrap;

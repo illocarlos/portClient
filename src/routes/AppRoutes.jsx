@@ -1,12 +1,14 @@
 import { Routes, Route } from 'react-router-dom'
-import Contact from '../components/Contact/Contact'
+import FormContactPage from '../pages/FormContactPage/FormContactPage'
+import Index from '../components/Navigation/Navigation'
 
 
 const AppRoutes = () => {
 
     return (
         <Routes>
-            <Route path='/Contact' element={<Contact />} />
+            <Route path='/' element={<Index />} />
+            <Route path='/Contact' element={<FormContactPage />} />
             <Route path='*' element={<h1> NOTHING BUT YOU ARE INSIDE </h1>} />
         </Routes>
     )
