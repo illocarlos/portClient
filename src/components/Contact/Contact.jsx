@@ -1,12 +1,12 @@
 import './Contact.css'
 import { Button, Form } from 'react-bootstrap'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import contactService from '../../service/contact.service'
+import { useNavigate } from 'react-router-dom'
 
 const Contact = () => {
-
+    const navigate = useNavigate()
     const [contactData, setContactData] = useState({
-
         email: '',
         info: '',
 
@@ -19,11 +19,16 @@ const Contact = () => {
     }
     const handleContactSubmit = e => {
 
+        console.log('--------->', contactData)
         e.preventDefault()
+
         contactService
-            .saveContact(contactData)
-            .then(respone => console.log(respone))
+            .saveContacts(contactData)
+            .then(response => console.log(response))
             .catch(err => console.log(err))
+            .finally(() => {
+                navigate('/')
+            })
 
     }
 

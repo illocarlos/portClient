@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import FormContactPage from '../pages/FormContactPage/FormContactPage'
-import Index from '../components/Navigation/Navigation'
+import Index from '../components/Index/Index'
 
 
 const AppRoutes = () => {
