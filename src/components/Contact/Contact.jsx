@@ -4,27 +4,34 @@ import { useState } from 'react'
 import contactService from '../../service/contact.service'
 import { useNavigate } from 'react-router-dom'
 
-const Contact = () => {
+const Contact = ({ setShowModal }) => {
+
     const navigate = useNavigate()
     const [contactData, setContactData] = useState({
-        email: '',
+        direcction: '',
         info: '',
 
     })
+
+
     const handleInputChange = e => {
 
         const { value, name } = e.currentTarget
         setContactData({ ...contactData, [name]: value })
 
     }
+
+
+
     const handleContactSubmit = e => {
 
-        console.log('--------->', contactData)
         e.preventDefault()
 
         contactService
             .saveContacts(contactData)
-            .then(response => console.log(response))
+            .then(() => {
+                setShowModal(false)
+            })
             .catch(err => console.log(err))
             .finally(() => {
                 navigate('/')
@@ -35,9 +42,9 @@ const Contact = () => {
     return (
         <div className='Contact'>
             <Form onSubmit={handleContactSubmit}>
-                <Form.Group className="mb-3" controlId="email">
+                <Form.Group className="mb-3" controlId="direcction">
                     <Form.Label>Email address</Form.Label>
-                    <Form.Control value={contactData.email} name="email" onChange={handleInputChange} type="email" placeholder="name@example.com" />
+                    <Form.Control value={contactData.direcction} name="direcction" onChange={handleInputChange} type="email" placeholder="name@example.com" />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="info">
                     <Form.Label>Information</Form.Label>
