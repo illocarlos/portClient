@@ -10,6 +10,7 @@ const Contact = ({ setShowModal }) => {
     const [contactData, setContactData] = useState({
         direcction: '',
         info: '',
+        name: '',
 
     })
 
@@ -46,14 +47,18 @@ const Contact = ({ setShowModal }) => {
                     <Form.Label>Email address</Form.Label>
                     <Form.Control value={contactData.direcction} name="direcction" onChange={handleInputChange} type="email" placeholder="name@example.com" />
                 </Form.Group>
+                <Form.Group className="mb-3" controlId="name">
+                    <Form.Label>Name</Form.Label>
+                    <Form.Control value={contactData.name} type="text" name="name" onChange={handleInputChange} rows={6} placeholder="Name" />
+                </Form.Group>
                 <Form.Group className="mb-3" controlId="info">
                     <Form.Label>Information</Form.Label>
                     <Form.Control value={contactData.info} name="info" onChange={handleInputChange} as="textarea" rows={6} />
-
-                    <div className="d-grid">
-                        <Button variant="dark" type="submit">send</Button>
-                    </div>
                 </Form.Group>
+
+                <div className="d-grid">
+                    <Button variant="dark" type="submit">send</Button>
+                </div>
             </Form>
         </div>
     )
