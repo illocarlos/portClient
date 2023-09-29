@@ -1,5 +1,6 @@
 import './App.css'
 import AppRoutes from './routes/AppRoutes'
+import UserMessage from '../src/components/UserMessage/UserMessage'
 
 
 
@@ -13,7 +14,7 @@ function App() {
     <div className='App'>
 
       <AppRoutes />
-
+      <UserMessage />
     </div>
 
   )
