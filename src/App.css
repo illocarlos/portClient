@@ -1,0 +1,30 @@
+body {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    color: #e70d0d !important
+}
+
+body::after {
+    background-color: rgb(210, 146, 62);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    z-index: -4;
+    background-image: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    transform: scale(0.5);
+    transform-origin: top left;
+}
