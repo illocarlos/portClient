@@ -10,13 +10,13 @@ import { MessageProviderWrapper } from '../src/contexts/message.context'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
-  <React.StrictMode>
-    <MessageProviderWrapper>
+  <MessageProviderWrapper>
+    <React.StrictMode>
       <AuthProviderWrapper>
         <Route>
           <App />
         </Route >
       </AuthProviderWrapper>
-    </MessageProviderWrapper>
-  </React.StrictMode>
+    </React.StrictMode>
+  </MessageProviderWrapper>
 )

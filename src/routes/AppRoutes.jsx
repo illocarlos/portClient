@@ -12,7 +12,7 @@ const AppRoutes = () => {
 
     return (
         <Routes>
-            <Route path='/' element={<Index />} />
+            <Route path='/' />
             <Route path='/Contact' element={<FormContactPage />} />
             <Route path='/NewWorkForm' element={<NewWorkPage />} />
             <Route path={"/auth/signup"} element={<SignupPage />} />

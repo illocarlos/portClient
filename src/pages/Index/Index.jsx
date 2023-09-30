@@ -28,7 +28,7 @@ const Index = () => {
 
                         <Modal show={showModal} onHide={() => setShowModal(false)} >
                             <Modal.Header closeButton>
-                                <Modal.Title>aaaaaaaa</Modal.Title>
+                                <Modal.Title>NEW WORK</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
                                 <NewWorkForm setShowModal={setShowModal} />
@@ -42,19 +42,22 @@ const Index = () => {
                 {
                     !loggedUser &&
                     <>
-                        <Link to={"/auth/login"} className=" mx-2  nav-link"> Log In</Link>
+                        <Link to={"/auth/login"} className=" mx-2  nav-link"> O</Link>
                         <div className='Index' >
                             <Button to={'/Contact'} onClick={() => setShowModal(true)}> Contact</Button>
                         </div>
 
                         <Modal show={showModal} onHide={() => setShowModal(false)} >
                             <Modal.Header closeButton>
-                                <Modal.Title>aaaaaaaa</Modal.Title>
+                                <Modal.Title>Contact me</Modal.Title>
                             </Modal.Header>
                             <Modal.Body>
                                 <Contact setShowModal={setShowModal} />
                             </Modal.Body>
                         </Modal>
+
+
+
                     </>
                 }
 

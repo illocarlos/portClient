@@ -40,6 +40,7 @@ const SignupForm = () => {
         authService
             .signup(signupData)
             .then(() => {
+
                 emitMessage('welcome')
                 navigate('/')
             })

@@ -8,16 +8,16 @@ class UploadServices {
             baseURL: `${import.meta.env.VITE_API_URL}/upload`,
         })
 
-        // this.api.interceptors.request.use((config) => {
+        this.api.interceptors.request.use((config) => {
 
-        //     const storedToken = localStorage.getItem("authToken");
+            const storedToken = localStorage.getItem("authToken");
 
-        //     if (storedToken) {
-        //         config.headers = { Authorization: `Bearer ${storedToken}` }
-        //     }
+            if (storedToken) {
+                config.headers = { Authorization: `Bearer ${storedToken}` }
+            }
 
-        //     return config
-        // })
+            return config
+        })
 
     }
 
@@ -25,9 +25,7 @@ class UploadServices {
         return this.api.post("/image", imageForm)
     }
 
-    // uploadimages(imagesForm) {
-    //     return this.api.post('/images', imagesForm)
-    // }
+
 }
 
 const uploadServices = new UploadServices()

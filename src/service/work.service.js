@@ -4,7 +4,7 @@ class WorkService {
 
   constructor() {
     this.api = axios.create({
-      baseURL: `${import.meta.env.VITE_API_URL}`,
+      baseURL: `${import.meta.env.VITE_API_URL}/work`,
     });
 
     this.api.interceptors.request.use((config) => {
@@ -19,23 +19,23 @@ class WorkService {
   }
 
   getWorks() {
-    return this.api.get("/work/list");
+    return this.api.get("/list");
   }
 
   getWorkDetails(work_id) {
-    return this.api.get(`/work/${work_id}`);
+    return this.api.get(`/${work_id}`);
   }
 
   newWork(workData) {
-    return this.api.post("/work/newWork", workData);
+    return this.api.post("/newWork", workData);
   }
 
   editWork(work_id, workData) {
-    return this.api.put(`/work/edit/${work_id}`, { workData })
+    return this.api.put(`/edit/${work_id}`, { workData })
   }
 
   deleteWork(work_id) {
-    return this.api.delete(`/work/delete/${work_id}`);
+    return this.api.delete(`/delete/${work_id}`);
   }
 
 }

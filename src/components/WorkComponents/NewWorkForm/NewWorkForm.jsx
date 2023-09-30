@@ -1,6 +1,5 @@
-
 import { useState, useContext } from "react"
-import { Form, Button, Row, Col } from "react-bootstrap"
+import { Form, Button, } from "react-bootstrap"
 import { useNavigate } from "react-router-dom"
 import workService from "../../../service/work.service"
 import { MessageContext } from "../../../contexts/message.context"
@@ -9,7 +8,7 @@ import uploadServices from "../../../service/upload.service"
 import FormError from '../../FormError/FormError'
 
 
-const NewWorkForm = ({ fireFinalActions, setShowModal }) => {
+const NewWorkForm = ({ setShowModal }) => {
   const navigate = useNavigate()
   const [isLoading, setIsLoading] = useState(false);
   const [errors, setErrors] = useState([])
@@ -17,9 +16,9 @@ const NewWorkForm = ({ fireFinalActions, setShowModal }) => {
 
 
   const [workData, setWorkData] = useState({
-    description: '',
-    image: '',
-    link: '',
+    workImage: "",
+    description: "",
+    link: "",
     attendees: [],
   })
 
@@ -48,11 +47,8 @@ const NewWorkForm = ({ fireFinalActions, setShowModal }) => {
         emitMessage('create new proyect')
 
       })
-
       .catch(err => {
-
         setErrors(err.response.data.errorMessages)
-
       })
       .finally(() => {
         navigate('/')
@@ -61,7 +57,6 @@ const NewWorkForm = ({ fireFinalActions, setShowModal }) => {
 
   }
   const handleFileUpload = e => {
-
     const formData = new FormData()
     formData.append('imageData', e.target.files[0])
 
@@ -71,8 +66,9 @@ const NewWorkForm = ({ fireFinalActions, setShowModal }) => {
       .then((res) => {
         setWorkData({
           ...workData,
-          image: res.data.cloudinary_url
+          workImage: res.data.cloudinary_url
         })
+
       })
       .catch(err => console.log(err))
   }
@@ -97,7 +93,8 @@ const NewWorkForm = ({ fireFinalActions, setShowModal }) => {
 
       <Form.Group className="mb-3" controlId="image">
         <Form.Label>image</Form.Label>
-        <Form.Control type="file" multiple name="image" onChange={handleFileUpload} />
+        <Form.Control type="file"
+          onChange={handleFileUpload} />
       </Form.Group>
 
 
