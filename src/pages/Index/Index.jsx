@@ -6,13 +6,14 @@ import Contact from '../../components/Contact/Contact'
 import { Link } from 'react-router-dom'
 import NewWorkForm from '../../components/WorkComponents/NewWorkForm/NewWorkForm'
 import CompoLink from '../../components/compLink/CompoLink';
-
+import mail from '../../../public/mail.png'
 const Index = () => {
     const [showModal, setShowModal] = useState(false)
     const { loggedUser, logout } = useContext(AuthContext)
 
     return (
         <div className='Index'>
+
             <Container>
 
 
@@ -22,12 +23,15 @@ const Index = () => {
                         <Navbar className="bg-body-tertiary">
 
                             <Link to={"/auth/login"} className=" mx-2  nav-link"> .</Link>
-                            <Link to={"/"}>LOGO.</Link>
+                            <Link to={"/"}>LOGO</Link>
                             <Navbar.Toggle />
                             <Navbar.Collapse className="justify-content-end">
                                 <CompoLink />
-                                <Button>
+                                <Button to={'/Contact'} onClick={() => setShowModal(true)} type="submit" title='send mail'>
+                                    <div>
+                                        <img src={mail} alt="mail" />
 
+                                    </div>
                                 </Button>
                             </Navbar.Collapse>
 
@@ -50,7 +54,7 @@ const Index = () => {
                 {
                     loggedUser &&
                     <>
-                        <Button to={'/NewWorkForm'} className="buttonClick" onClick={() => setShowModal(true)} style={{ width: '300px' }} type="submit">
+                        <Button to={'/NewWorkForm'} className="buttonClick" onClick={() => setShowModal(true)}>
                             Update Work
                         </Button>
                         <Link to={'/'} className='mx-2  nav-link' onClick={logout}>log out</Link>
