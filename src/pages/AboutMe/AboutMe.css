@@ -1,0 +1,21 @@
+.AboutMe {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+}
+
+.articleAboutMe {
+    color: white;
+    align-items: center;
+
+
+
+}
+
+.AritcleImg img {
+
+    border-radius: 200px;
+}

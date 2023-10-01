@@ -27,7 +27,10 @@ const Index = () => {
                             <Navbar.Toggle />
                             <Navbar.Collapse className="justify-content-end">
                                 <CompoLink />
-                                <Button to={'/Contact'} onClick={() => setShowModal(true)} type="submit" title='send mail'>
+                                <Button to={'/Contact'}
+                                    onClick={() => setShowModal(true)}
+                                    className="ButtonEmail"
+                                    type="submit" title='send mail'>
                                     <div>
                                         <img src={mail} alt="mail" />
 

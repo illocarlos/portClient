@@ -1,19 +1,14 @@
 body {
-
+    background-image: url('../public/fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-
-}
-
-h1 {
-    color: #e70d0d !important
+    position: relative;
 }
 
 body::after {
-    background-color: rgb(210, 146, 62);
     content: "";
     position: fixed;
     top: 0;
@@ -23,8 +18,7 @@ body::after {
     z-index: -4;
     background-image: inherit;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: inherit;
+    background-repeat: repeat;
     transform: scale(0.5);
     transform-origin: top left;
 }
