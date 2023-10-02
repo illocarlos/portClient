@@ -1,21 +1,31 @@
-.AboutMe {
-    height: 500px;
-    width: 100vw;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-
+.articleAboutMe {
+    margin-top: 90px;
+    padding: 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #000000d5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.637);
 }
 
-.articleAboutMe {
-    color: white;
+.imgContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-
-
-
 }
 
 .AritcleImg img {
 
-    border-radius: 200px;
+    width: 300px;
+    height: auto;
+    border-radius: 180px;
+}
+
+.AritcleImg {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
 }

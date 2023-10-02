@@ -19,7 +19,7 @@ class WorkService {
   }
 
   getWorks() {
-    return this.api.get("/list");
+    return this.api.get("/listWork");
   }
 
   getWorkDetails(work_id) {

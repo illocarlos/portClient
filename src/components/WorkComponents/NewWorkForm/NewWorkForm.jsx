@@ -19,6 +19,7 @@ const NewWorkForm = ({ setShowModal }) => {
     workImage: "",
     description: "",
     link: "",
+    gitHub: "",
     attendees: [],
   })
 
@@ -83,6 +84,12 @@ const NewWorkForm = ({ setShowModal }) => {
         <Form.Label>description</Form.Label>
         <Form.Control type="text" value={workData.description}
           name="description" onChange={handleInputChange} />
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="gitHub">
+        <Form.Label>GitHub</Form.Label>
+        <Form.Control type="text" value={workData.gitHub}
+          name="gitHub" onChange={handleInputChange} />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="link">

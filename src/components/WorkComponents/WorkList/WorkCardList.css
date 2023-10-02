@@ -1,0 +1,29 @@
+.work-card {
+    text-align: center;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #10bf9991;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.work-avatar {
+    width: 400px;
+    height: 500px;
+
+    margin-bottom: 10px;
+}
+
+.work-name {
+    font-size: 26px;
+    margin: 0;
+
+}

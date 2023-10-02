@@ -17,7 +17,7 @@ const AppRoutes = () => {
             <Route path='/NewWorkForm' element={<NewWorkPage />} />
             <Route path={"/auth/signup"} element={<SignupPage />} />
             <Route path={"/auth/login"} element={<LoginPage />} />
-            <Route path={"/work/list"} element={<workGalleryPage />} />
+
 
             <Route element={<PrivateRoute />}>
                 <Route path={"/work/delete/:work_id"} />

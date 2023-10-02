@@ -1,5 +1,5 @@
 body {
-    background-image: url('../public/fondo.png');
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -8,17 +8,33 @@ body {
     position: relative;
 }
 
-body::after {
-    content: "";
+
+
+.navIndex {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    z-index: -4;
-    background-image: inherit;
+    width: 100vw;
+    z-index: 1;
+}
+
+h1 {
+    color: white;
+}
+
+.WorkGalleryPage {
+    z-index: 1;
+}
+
+.PortFol {
+    background-image: url('../public/fondo.png');
     background-size: cover;
-    background-repeat: repeat;
-    transform: scale(0.5);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 110vh;
+    position: relative;
+    background-size: cover;
     transform-origin: top left;
+
 }

@@ -1,33 +1,29 @@
 import { Link } from 'react-router-dom'
-import { Card, Button, } from 'react-bootstrap'
-import './WorkList.css'
+import './WorkCardList.css'
+import git from '../../../../public/git.png'
+import web from '../../../../public/buscador.png'
 
 
-const WorkList = ({ description, photo, link, _id }) => {
+const WorkList = ({ description, workImage, link, _id, gitHub }) => {
     return (
-        <div key={_id}>
-            <Card  >
-
-                <Card.Body style={{ color: 'white', height: '300px', width: '300px' }}>
-                    <div className='d-flex flex-column justify-content-between'>
-                        <div>
-                            <Card.Title style={{
-                                whiteSpace: 'nowrap', textOverflow:
-                                    'ellipsis', overflow: 'hidden'
-                            }}>{description}</Card.Title>
-                            <Card.Text style={{
-                                height: '170px',
-                                textOverflow: 'ellipsis', overflow: 'hidden'
-                            }}>
-                                {link}</Card.Text>
-                        </div>
-                        <Link to={`/`}>
-                            <Button className='bottonEvent' style={{ width: '100%' }} variant='warning'>link</Button>
-                        </Link>
+        <div className="work-card" >
+            <img src={workImage} alt="Avatar" className="work-avatar" />
+            <h4 className="work-name mt-5">{description}</h4>
+            <div>
+                <Link to={link} target="_blank" title='go to Git Hub'>
+                    <div>
+                        <img src={web} alt="Git" />
                     </div>
-                </Card.Body>
-            </Card>
-        </div >
+                </Link>
+                <Link to={gitHub} target="_blank" title='go to Git Hub'>
+                    <div>
+                        <img src={git} alt="Git" />
+
+                    </div>
+                </Link>
+            </div>
+        </div>
+
     )
 
 }

@@ -22,7 +22,7 @@ const Index = () => {
                     <>
                         <Navbar className="bg-body-tertiary">
 
-                            <Link to={"/auth/login"} className=" mx-2  nav-link"> .</Link>
+                            <Link to={"/auth/login"} className=" mx-2  nav-link">.</Link>
                             <Link to={"/"}>LOGO</Link>
                             <Navbar.Toggle />
                             <Navbar.Collapse className="justify-content-end">
