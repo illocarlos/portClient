@@ -14,12 +14,12 @@ function App() {
   return (
 
     <div className='App'>
-      <div className='navIndex'>
-        <Index />
-      </div>
-      <div className='PortFol'>
-        <PortFol />
-      </div>
+
+      <Index />
+
+
+      <PortFol />
+
       <WorkGalleryPage />
       <UserMessage />
       <AppRoutes />

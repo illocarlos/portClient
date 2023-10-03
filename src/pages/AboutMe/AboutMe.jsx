@@ -3,13 +3,14 @@ import me from '../../../public/me.jpg'
 import { Container, Row, Col } from 'react-bootstrap'
 import cv from '../../../public/carlosCv.pdf'
 
+
 const AboutMe = () => {
 
     return (
 
-        <article className='PortFol'>
+        <article className='PortFol' >
             <Container>
-                <Row className="d-flex justify-content-center">
+                <Row className=" d-flex justify-content-center">
                     <Col md={6} className="order-1 order-md-1">
                         <div className='articleAboutMe'>
                             Soy un desarrollador web que curso el bootcamp de Ironhack,
@@ -34,15 +35,14 @@ const AboutMe = () => {
                             de trabajo scrum, ademas fortalecí mucho mas el trabajo en equipo,
                             ser resolutivo y gestionar mi tiempo de manera efectiva.
                             <br />
-                            <a href={cv} download="carlosCv.pdf" title='download cv'>
-                                <div>
-                                    <p>CV</p>
-
-                                </div>
-                            </a>
+                            <div className='cvButton' >
+                                <a className='cvButtonA' href={cv} download="carlosCv.pdf" title='download cv'>
+                                    CV
+                                </a>
+                            </div>
                         </div>
                     </Col>
-                    <Col md={6} className="imgContainer order-2 order-md-2">
+                    <Col md={6} className="imgContainer order-2 order-md-2 ">
                         <Col sm={12} className='mt-4'>
 
                             <div className='AritcleImg'>

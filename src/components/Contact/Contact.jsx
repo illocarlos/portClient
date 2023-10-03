@@ -41,7 +41,7 @@ const Contact = ({ setShowModal }) => {
     }
 
     return (
-        <div className='Contact'>
+        <div  >
             <Form onSubmit={handleContactSubmit}>
                 <Form.Group className="mb-3" controlId="direcction">
                     <Form.Label>Email address</Form.Label>
@@ -56,9 +56,9 @@ const Contact = ({ setShowModal }) => {
                     <Form.Control value={contactData.info} name="info" onChange={handleInputChange} as="textarea" rows={6} />
                 </Form.Group>
 
-                <div className="d-grid">
-                    <Button variant="dark" type="submit">send</Button>
-                </div>
+
+                <Button className="button-send" type="submit">send</Button>
+
             </Form>
         </div>
     )

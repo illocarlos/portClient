@@ -17,6 +17,7 @@ const NewWorkForm = ({ setShowModal }) => {
 
   const [workData, setWorkData] = useState({
     workImage: "",
+    title: "",
     description: "",
     link: "",
     gitHub: "",
@@ -79,6 +80,12 @@ const NewWorkForm = ({ setShowModal }) => {
 
     <Form className='formEvent'
       style={{ width: '300px', textAlign: 'center' }} onSubmit={handleEventSubmit}>
+
+      <Form.Group className="mb-3" controlId="title">
+        <Form.Label>title</Form.Label>
+        <Form.Control type="text" value={workData.title}
+          name="title" onChange={handleInputChange} />
+      </Form.Group>
 
       <Form.Group className="mb-3" controlId="description">
         <Form.Label>description</Form.Label>

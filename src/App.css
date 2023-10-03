@@ -3,18 +3,13 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 100vw;
     margin: 0;
     padding: 0;
     position: relative;
 }
 
 
-
-.navIndex {
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
-}
 
 h1 {
     color: white;
@@ -22,19 +17,4 @@ h1 {
 
 .WorkGalleryPage {
     z-index: 1;
-}
-
-.PortFol {
-    background-image: url('../public/fondo.png');
-    background-size: cover;
-    position: fixed;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    height: 110vh;
-    position: relative;
-    background-size: cover;
-    transform-origin: top left;
-
 }

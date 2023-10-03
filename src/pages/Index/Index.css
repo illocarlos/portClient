@@ -1,9 +1,128 @@
 .Index {
-    background-color: rgba(0, 0, 0, 0.545);
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+
+}
+
+.ocultP {
+    position: fixed;
+    left: 1px;
+    top: 1px;
+    color: transparent;
+
+
+}
+
+.logoContainer {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .ButtonEmail {
     background-color: rgba(255, 255, 255, 0);
     border: none;
 
+}
+
+
+
+.logoP {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+    text-decoration: rgb(239, 239, 239);
+    text-decoration: none;
+    text-align: center;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.logoP:hover {
+    color: white;
+
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.logoContainer {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+}
+
+.logoImg {
+    position: absolute;
+    left: -100%;
+    animation: slideImage 2s ease-in-out forwards;
+}
+
+@keyframes slideImage {
+    0% {
+        left: -100%;
+
+    }
+
+    100% {
+        left: 205px;
+    }
+
+}
+
+.openButton,
+.closeButton {
+    display: block;
+}
+
+.openButton {
+    background-color: transparent;
+    display: none;
+
+}
+
+.ButtonEmail:hover {
+    background-color: transparent;
+}
+
+.ButtonEmail::after {
+    outline: none;
+}
+
+
+.ButtonEmail:hover .closeButton {
+    display: none;
+}
+
+.ButtonEmail:hover .openButton {
+    display: block;
+}
+
+.custom-close-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+
+.custom-close-button:focus {
+    outline: none;
+}
+
+.Contact {
+    background-color: rgba(0, 0, 0, 0.745);
+    color: rgb(255, 255, 255);
+
+}
+
+
+.Contact {
+    background-color: rgba(0, 0, 0, 0.745);
+}
+
+.modal-content {
+    border-radius: 20px;
 }
