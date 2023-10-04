@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import './WorkCardList.css'
 import git from '../../../../public/git.png'
-import web from '../../../../public/buscador.png'
 
 
 const WorkList = ({ description, workImage, link, _id, gitHub }) => {
@@ -12,7 +11,7 @@ const WorkList = ({ description, workImage, link, _id, gitHub }) => {
             <div>
                 <Link to={link} target="_blank" title='go to Git Hub'>
                     <div>
-                        <img src={web} alt="Git" />
+                        <p>WEEEB</p>
                     </div>
                 </Link>
                 <Link to={gitHub} target="_blank" title='go to Git Hub'>

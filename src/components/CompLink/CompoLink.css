@@ -1,20 +1,98 @@
 .imageContainer {
     width: 100%;
     position: relative;
-    display: inline-block;
-    overflow: hidden;
 }
 
-
-
 .Git,
-.linked {
+.linked,
+.button-CV {
     width: 100%;
     height: auto;
+    margin-top: 5px;
     transition: transform 0.5s;
 }
 
 .linkGit:hover .Git,
-.linklinked:hover .linked {
+.linklinked:hover .linked,
+.button-CV:hover {
     transform: scale(1.2);
+}
+
+.button-CV {
+
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 6px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    background-color: rgb(255, 0, 0);
+    transition: transform 0.5s;
+}
+
+.button-CV:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+.dropdown-menu.centered {
+    background-color: rgba(0, 0, 0, 0.775);
+    width: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    transform: scaleX(0);
+    left: -70px;
+    transform-origin: top right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.dropdown-toggle-icon {
+    background-color: transparent;
+    border: none;
+    transform: scaleX(-1);
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../public/akat.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.dropdown-menu.show.centered {
+
+    transform: scaleX(1.5);
+}
+
+.dropdown-toggle-icon {
+    transform: scaleX(-1);
+    position: relative;
+    left: 120%;
+    animation: slideImage-mb 2s ease-in-out forwards;
+}
+
+@keyframes slideImage-mb {
+    0% {
+        left: +100%;
+
+    }
+
+    100% {
+        left: -20px;
+    }
+
 }
