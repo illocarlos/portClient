@@ -5,24 +5,26 @@ import git from '../../../../public/git.png'
 
 const WorkList = ({ description, workImage, link, _id, gitHub }) => {
     return (
-        <div className="work-card" >
-            <img src={workImage} alt="Avatar" className="work-avatar" />
-            <h4 className="work-name mt-5">{description}</h4>
-            <div>
-                <Link to={link} target="_blank" title='go to Git Hub'>
-                    <div>
-                        <p>WEEEB</p>
-                    </div>
-                </Link>
-                <Link to={gitHub} target="_blank" title='go to Git Hub'>
-                    <div>
-                        <img src={git} alt="Git" />
+        <div className="work-card">
+            <div className="work-content">
+                <h4 className="work-name ">{description}</h4>
 
-                    </div>
-                </Link>
+                <div
+                    className="work-avatar"
+                    style={{ backgroundImage: `url(${workImage})` }}
+                ></div>
+                <div className="work-links">
+                    <Link to={link} target="_blank" title="Go to GitHub">
+                        <div></div>
+                    </Link>
+                    <Link to={gitHub} target="_blank" title="Go to GitHub">
+                        <div>
+                            <p>GIT</p>
+                        </div>
+                    </Link>
+                </div>
             </div>
         </div>
-
     )
 
 }

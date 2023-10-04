@@ -6,13 +6,28 @@
 
  .romRotate {
      position: absolute;
-     z-index: -5;
-     width: 180px;
-     height: 180px;
-     background-color: red;
-     transform: rotate(45deg);
-     box-shadow: -5px 5px 90px 9px red;
+     z-index: -2;
+     width: 190px;
+     height: 190px;
+     background-color: rgb(221, 22, 22);
+     box-shadow: -5px 5px 90px 9px rgb(214, 9, 9);
+     transform-origin: center;
+     border-radius: 10%;
+     animation: rotate 9s linear infinite;
  }
+
+ @keyframes rotate {
+     0% {
+         transform: rotate(0deg);
+     }
+
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+
+
 
  .backgroungImg {
      width: 100%;
@@ -24,16 +39,18 @@
  }
 
  .backgroungImg h1 {
-     font-size: 5rem;
+     font-size: 4rem;
      position: absolute;
      z-index: -1;
+     color: rgba(255, 255, 255, 0.242);
+
 
 
  }
 
  .backgroungImg h3 {
-     font-size: 4.5rem;
+     font-size: 2.2rem;
      z-index: 1;
-     color: rgb(255, 0, 0);
+     color: rgb(0, 0, 0);
 
  }

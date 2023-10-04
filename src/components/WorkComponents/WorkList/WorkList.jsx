@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkCardList from './WorkCardList.jsx';
 import './WorkList.css';
+import { Row, Col } from 'react-bootstrap';
 
 
 const WorkList = ({ works }) => {
@@ -10,16 +11,18 @@ const WorkList = ({ works }) => {
         <div className="work-list-container">
 
             <div className="work-card-list">
+                <Row>
 
-                {works.map((elm, index) => (
+                    {works.map((elm, index) => (
+                        <Col sm={12} md={6} lg={4}  >
+                            <div key={works._id} className="work-card">
 
-                    <div key={works._id} className="work-card">
+                                <WorkCardList key={index} {...elm} />
+                            </div>
+                        </Col>
+                    ))}
 
-                        <WorkCardList key={index} {...elm} />
-                    </div>
-
-                ))}
-
+                </Row>
 
             </div>
         </div>

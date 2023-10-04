@@ -1,6 +1,5 @@
 import './AboutMe.css'
 import me from '../../../public/me.jpg'
-import { Link } from 'react-router-dom'
 import { Container, Row, Col } from 'react-bootstrap'
 
 
@@ -33,7 +32,8 @@ const AboutMe = () => {
                                 <br />
                                 Desde que empece a formarme tuve oportunidad  de trabajar en proyectos individuales y grupales,
                                 lo que me permitió adquirir experiencia en front-end
-                                (CSS,HTML,bootsrtap) y back-end (JavaScript,React.js,Node.js,Express.js) bajo un marco
+                                (CSS,HTML,bootsrtap) y back-end
+                                (JavaScript,React.js,Node.js,Express.js) bajo un marco
                                 de trabajo scrum, ademas fortalecí mucho mas el trabajo en equipo,
                                 ser resolutivo y gestionar mi tiempo de manera efectiva.
                                 <br />

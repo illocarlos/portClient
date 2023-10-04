@@ -4,6 +4,7 @@ import UserMessage from '../src/components/UserMessage/UserMessage'
 import Index from './pages/Index/Index'
 import PortFol from './pages/Portfol/Portfol'
 import WorkGalleryPage from './pages/Work/WorkGalleryPage/WorkGalleryPage'
+import Footer from './pages/footer/Footer'
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <PortFol />
       <WorkGalleryPage />
       <UserMessage />
+      <Footer />
       <AppRoutes />
 
     </div>
