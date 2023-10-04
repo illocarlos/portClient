@@ -1,31 +1,25 @@
 import React from 'react';
 import WorkCardList from './WorkCardList.jsx';
-import './WorkList.css';
 import { Row, Col } from 'react-bootstrap';
 
 
 const WorkList = ({ works }) => {
     return (
 
+        <Row>
 
-        <div className="work-list-container">
+            {works.map((elm, index) => (
+                <Col sm={12} md={6} lg={4}  >
+                    <div key={works._id} className="work-card">
 
-            <div className="work-card-list">
-                <Row>
+                        <WorkCardList key={index} {...elm} />
+                    </div>
+                </Col>
+            ))}
 
-                    {works.map((elm, index) => (
-                        <Col sm={12} md={6} lg={4}  >
-                            <div key={works._id} className="work-card">
+        </Row>
 
-                                <WorkCardList key={index} {...elm} />
-                            </div>
-                        </Col>
-                    ))}
 
-                </Row>
-
-            </div>
-        </div>
     );
 };
 

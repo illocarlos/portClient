@@ -2,23 +2,25 @@
     display: flex;
     width: 100%;
     overflow: hidden;
+    position: relative;
+    transition: transform 1s;
 
 }
 
-.work-content:hover {
+.work-card:hover {
     transform: scale(1.1);
+
 }
 
 .work-content {
     width: 100%;
     height: 50vh;
-    transition: transform 1s;
+    position: relative;
 }
 
 .work-avatar {
     width: 100%;
     height: 100%;
-    position: relative;
     top: 0;
     left: 0;
     background-size: 100% 100%;
@@ -27,16 +29,20 @@
 }
 
 .work-name {
-    position: fixed;
-    z-index: 3;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 1s;
 
 }
 
-.work-links {
-    display: flex;
-    justify-content: space-between;
+.work-card:hover .work-name {
+    opacity: 1;
+    color: white;
 }
