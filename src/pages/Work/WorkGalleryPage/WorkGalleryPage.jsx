@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import './EventGalleryPage.css'
-import { Container } from 'react-bootstrap'
 import workService from '../../../service/work.service'
 import WorkList from '../../../components/WorkComponents/WorkList/WorkList'
-
+import fonAkat from '../../../../public/FONDOak.png'
 const WorkGalleryPage = () => {
 
   const [works, setWork] = useState([])
@@ -24,15 +23,16 @@ const WorkGalleryPage = () => {
 
   return (
     <>
-      <Container>
-        <div className='d-flex justify-content-between' >
-          <h1>WORK</h1>
 
-        </div>
-        <hr />
-        <WorkList works={works} />
+      <div className='backgroungImg'>
+        <div className='romRotate'></div>
+        <h1>PROYECTOS</h1>
+        <h3>PROYECTOS</h3>
+      </div>
 
-      </Container>
+      <WorkList works={works} />
+
+
 
     </>
   )

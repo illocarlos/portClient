@@ -15,7 +15,7 @@ const ModalContact = () => {
             <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header className='Contact' >
 
-                    <Modal.Title>Contact me</Modal.Title>
+                    <Modal.Title>Contactar</Modal.Title>
                     <button className="custom-close-button" onClick={() => setShowModal(false)}>
                         X
                     </button>

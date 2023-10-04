@@ -19,13 +19,13 @@
 }
 
 .button-CV {
-
+    margin-top: 7px;
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     width: 50px;
-    height: 50px;
+    height: 47px;
     padding: 4px;
     border-radius: 50%;
     border: 6px solid rgb(255, 255, 255);
@@ -59,8 +59,9 @@
 }
 
 .dropdown-toggle-icon {
+    border: 1px solid red;
     background-color: transparent;
-    border: none;
+    border-radius: 40%;
     transform: scaleX(-1);
     width: 50px;
     height: 50px;
@@ -72,6 +73,14 @@
     margin-right: 5px;
 }
 
+@media (min-width: 600px) {
+    .dropdown-toggle-icon {
+        display: none;
+
+    }
+
+}
+
 
 .dropdown-menu.show.centered {
 
@@ -81,18 +90,18 @@
 .dropdown-toggle-icon {
     transform: scaleX(-1);
     position: relative;
-    left: 120%;
+    left: 100%;
     animation: slideImage-mb 2s ease-in-out forwards;
 }
 
 @keyframes slideImage-mb {
     0% {
-        left: +100%;
+        left: +230%;
 
     }
 
     100% {
-        left: -20px;
+        left: -40px;
     }
 
 }

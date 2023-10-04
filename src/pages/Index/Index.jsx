@@ -34,7 +34,7 @@ const Index = () => {
                                         <img className='logoImg' src={akat} />
                                     </Col>
 
-                                    <Col md={12} className="order-1 order-md-1">
+                                    <Col md={12} className="order-1 order-md-1  ">
                                         <p className='logoP'> Carlos Albendiz  </p>
                                     </Col>
                                 </Row>
@@ -65,7 +65,7 @@ const Index = () => {
                     <Modal show={showModal} onHide={() => setShowModal(false)}>
                         <Modal.Header className='Contact' >
 
-                            <Modal.Title>Contact me</Modal.Title>
+                            <Modal.Title>Contactar</Modal.Title>
                             <button className="custom-close-button" onClick={() => setShowModal(false)}>
                                 X
                             </button>
