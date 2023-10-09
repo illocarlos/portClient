@@ -1,5 +1,5 @@
 .articleAboutMe {
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
     padding: 20px;
     font-size: 1.075rem;
@@ -33,7 +33,8 @@
 
 
 .PortFol {
-    background-image: url('../public/fondo.png');
+
+    background-image: url('../public/otrotro.jpg');
     background-size: cover;
     position: fixed;
     background-repeat: no-repeat;

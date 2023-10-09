@@ -1,6 +1,7 @@
 .Index {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.617);
     width: 100vw;
+
 
 }
 
@@ -145,5 +146,15 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: start;
+
+}
+
+@media (min-width: 607px) {
+
+
+    .Index {
+        position: fixed;
+
+    }
 
 }

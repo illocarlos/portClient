@@ -17,92 +17,92 @@ const Index = () => {
         <div className='Index'>
 
 
+            <div className='navBar'>
+
+                {
+                    !loggedUser &&
+                    <>
+                        <Navbar className='navDireccion'>
+
+                            <Link to={"/auth/login"} className=" ocultP ">.</Link>
+
+                            <Link className='logo' to={"/"}>
+                                <div className='logoContainer mt-2'>
+                                    <Row>
+
+                                        <Col md={2} className="order-1 order-md-1  d-none d-sm-inline ">
+                                            <img className='logoImg' src={akat} />
+                                        </Col>
+
+                                        <Col md={12} className="order-1 order-md-1  ">
+                                            <p className='logoP'> Carlos Albendiz  </p>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            </Link>
+                            <div className='navIcon'>
+                                <CompoLink />
+                                <Navbar.Collapse >
+
+                                    <Button to={'/Contact'}
+                                        onClick={() => setShowModal(true)}
+                                        className="ButtonEmail d-none d-sm-inline"
+                                        type="submit" title='send mail'>
+
+                                        <img className='openButton' src={open} alt="mail" />
+                                        <img className='closeButton' src={close} alt="mail" />
 
 
-            {
-                !loggedUser &&
-                <>
-                    <Navbar className='navDireccion'>
+                                    </Button>
+                                </Navbar.Collapse>
 
-                        <Link to={"/auth/login"} className=" ocultP ">.</Link>
-
-                        <Link className='logo' to={"/"}>
-                            <div className='logoContainer mt-2'>
-                                <Row>
-
-                                    <Col md={2} className="order-1 order-md-1  d-none d-sm-inline ">
-                                        <img className='logoImg' src={akat} />
-                                    </Col>
-
-                                    <Col md={12} className="order-1 order-md-1  ">
-                                        <p className='logoP'> Carlos Albendiz  </p>
-                                    </Col>
-                                </Row>
                             </div>
-                        </Link>
-                        <div className='navIcon'>
-                            <CompoLink />
-                            <Navbar.Collapse >
 
-                                <Button to={'/Contact'}
-                                    onClick={() => setShowModal(true)}
-                                    className="ButtonEmail d-none d-sm-inline"
-                                    type="submit" title='send mail'>
-
-                                    <img className='openButton' src={open} alt="mail" />
-                                    <img className='closeButton' src={close} alt="mail" />
-
-
-                                </Button>
-                            </Navbar.Collapse>
-
-                        </div>
-
-                    </Navbar>
+                        </Navbar>
 
 
 
-                    <Modal show={showModal} onHide={() => setShowModal(false)}>
-                        <Modal.Header className='Contact' >
+                        <Modal show={showModal} onHide={() => setShowModal(false)}>
+                            <Modal.Header className='Contact' >
 
-                            <Modal.Title>Contactar</Modal.Title>
-                            <button className="custom-close-button" onClick={() => setShowModal(false)}>
-                                X
-                            </button>
-                        </Modal.Header>
-                        <Modal.Body className='Contact' >
-                            <Contact setShowModal={setShowModal} />
-                        </Modal.Body>
-                    </Modal>
-
-
-
-                </>
-            }
-            {
-                loggedUser &&
-                <>
-                    <Button to={'/NewWorkForm'} className="buttonClick" onClick={() => setShowModal(true)}>
-                        Update Work
-                    </Button>
-                    <Link to={'/'} className='mx-2  nav-link' onClick={logout}>log out</Link>
-
-
-                    <Modal show={showModal} onHide={() => setShowModal(false)} >
-                        <Modal.Header closeButton>
-                            <Modal.Title>NEW WORK</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body>
-                            <NewWorkForm setShowModal={setShowModal} />
-                        </Modal.Body>
-                    </Modal>
+                                <Modal.Title>Contactar</Modal.Title>
+                                <button className="custom-close-button" onClick={() => setShowModal(false)}>
+                                    X
+                                </button>
+                            </Modal.Header>
+                            <Modal.Body className='Contact' >
+                                <Contact setShowModal={setShowModal} />
+                            </Modal.Body>
+                        </Modal>
 
 
 
-                </>
-            }
+                    </>
+                }
+                {
+                    loggedUser &&
+                    <>
+                        <Button to={'/NewWorkForm'} className="buttonClick" onClick={() => setShowModal(true)}>
+                            Update Work
+                        </Button>
+                        <Link to={'/'} className='mx-2  nav-link' onClick={logout}>log out</Link>
 
 
+                        <Modal show={showModal} onHide={() => setShowModal(false)} >
+                            <Modal.Header closeButton>
+                                <Modal.Title>NEW WORK</Modal.Title>
+                            </Modal.Header>
+                            <Modal.Body>
+                                <NewWorkForm setShowModal={setShowModal} />
+                            </Modal.Body>
+                        </Modal>
+
+
+
+                    </>
+                }
+
+            </div>
 
         </div >
     )
