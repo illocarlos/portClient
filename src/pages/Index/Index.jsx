@@ -5,10 +5,11 @@ import { useContext, useState } from "react";
 import Contact from '../../components/Contact/Contact'
 import { Link } from 'react-router-dom'
 import NewWorkForm from '../../components/WorkComponents/NewWorkForm/NewWorkForm'
-import CompoLink from '../../components/compLink/CompoLink';
+import CompoLink from '../../components/CompLink/CompoLink';
 import open from '../../../public/close.png'
 import close from '../../../public/open.png'
 import akat from '../../../public/akat.png'
+
 const Index = () => {
     const [showModal, setShowModal] = useState(false)
     const { loggedUser, logout } = useContext(AuthContext)
