@@ -34,7 +34,7 @@
 
 .PortFol {
 
-    background-image: url('../public/otrotro.jpg');
+    background-image: url('/otrotro.jpg');
     background-size: cover;
     position: fixed;
     background-repeat: no-repeat;
