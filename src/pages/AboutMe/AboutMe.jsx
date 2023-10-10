@@ -32,12 +32,11 @@ const AboutMe = () => {
                                 Desde que comencé mi formación,
                                 he tenido la oportunidad de trabajar en proyectos tanto individuales como en equipo.
                                 Esto me ha permitido adquirir experiencia en el desarrollo front-end,
-                                utilizando tecnologías como CSS, HTML y Bootstrap, así como en el desarrollo back-end,
-                                utilizando JavaScript, React.js, Node.js y Express.js. Además,
+                                utilizando tecnologías como CSS, HTML y Bootstrap,React.js, así como en el desarrollo back-end,
+                                utilizando JavaScript, Node.js,Mongodb y Express.js. Además,
                                 he trabajado en un entorno de trabajo basado en Scrum,
                                 lo que ha fortalecido aún más mis habilidades en el trabajo en equipo,
                                 la resolución de problemas y la gestión efectiva del tiempo
-                                y gestionar mi tiempo de manera efectiva.
                                 <br />
 
                             </div>

@@ -34,7 +34,7 @@ const CompoLink = () => {
                         </Link>
                     </Dropdown.Item>
                     <Dropdown.Item >
-                        <Link className='linkGit mr-3' to={"https://github.com/illocarlos"} target="_blank" title='go to Git Hub'>
+                        <Link className='linkGit mr-3' to={"https://github.com/illocarlos"} title='go to Git Hub'>
                             <div className='mt-2 imageContainer'>
 
                                 <img style={{ width: '40px', height: '47px' }} className='Git' src={"/git.png"} alt="Git" />
@@ -42,7 +42,9 @@ const CompoLink = () => {
                         </Link>
                     </Dropdown.Item>
                     <Dropdown.Item href="#action/3.3">
-                        <Link className='linklinked mr-3' to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"} title='go to  linkedln'>
+                        <Link className='linklinked mr-3'
+                            to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"}
+                            title='go to  linkedln'>
                             <div className='imageContainer'>
                                 <img style={{ width: '40px', height: '50px' }} className='linked' src={"/linked.png"} alt="Linked" />
                             </div>
