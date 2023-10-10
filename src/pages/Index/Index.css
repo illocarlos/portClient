@@ -148,13 +148,3 @@
     justify-content: start;
 
 }
-
-@media (min-width: 607px) {
-
-
-    .Index {
-        position: fixed;
-
-    }
-
-}
