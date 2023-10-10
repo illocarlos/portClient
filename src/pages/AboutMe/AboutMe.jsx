@@ -14,28 +14,30 @@ const AboutMe = () => {
                     <Row className=" d-flex justify-content-center">
                         <Col md={6} className="order-1 order-md-1">
                             <div className='articleAboutMe'>
-                                Soy un desarrollador web que curso el bootcamp de Ironhack,
-                                me distingo por ser resolutivo, trabajar bajo presión y
-                                responsable debido a mis 7 años en el ejercito,
-                                me encanta trabajar en equipo y desde que descubrir
-                                el mundo tecnológico relacionado con
-                                la programación quiero aportar mis conocimientos y aptitud.
+                                Soy un desarrollador web que está cursando el bootcamp de Ironhack.
+                                Me destaco por mi capacidad para resolver problemas,
+                                trabajar bajo presión y ser responsable,
+                                habilidades que adquirí durante mis 7 años de servicio en el ejército.
+                                Desde que descubrí el mundo de la tecnología y la programación,
+                                he estado ansioso por aplicar mis conocimientos y aptitudes en este campo.
                                 <br />
                                 <br />
-                                Mi objetivo es integrarme en un equipo de desarrollo
-                                tecnológico que me haga aprender mucho mas
-                                relacionado al sector y que me de muchas
-                                oportunidades de mejorar mis skill,
-                                que pueda ser creativo y me enseñen a adaptarme
-                                a todo tipo de problemas, para así tener un avance constate.
+                                Mi objetivo principal es integrarme en un equipo de desarrollo
+                                tecnológico que me brinde la oportunidad de aprender y crecer aún más en este sector.
+                                Busco un entorno en el que pueda ser creativo
+                                y donde se me enseñe a adaptarme a diversos desafíos,
+                                lo que me permitirá seguir avanzando constantemente en mi carrera.
                                 <br />
                                 <br />
-                                Desde que empece a formarme tuve oportunidad  de trabajar en proyectos individuales y grupales,
-                                lo que me permitió adquirir experiencia en front-end
-                                (CSS,HTML,bootsrtap) y back-end
-                                (JavaScript,React.js,Node.js,Express.js) bajo un marco
-                                de trabajo scrum, ademas fortalecí mucho mas el trabajo en equipo,
-                                ser resolutivo y gestionar mi tiempo de manera efectiva.
+                                Desde que comencé mi formación,
+                                he tenido la oportunidad de trabajar en proyectos tanto individuales como en equipo.
+                                Esto me ha permitido adquirir experiencia en el desarrollo front-end,
+                                utilizando tecnologías como CSS, HTML y Bootstrap, así como en el desarrollo back-end,
+                                utilizando JavaScript, React.js, Node.js y Express.js. Además,
+                                he trabajado en un entorno de trabajo basado en Scrum,
+                                lo que ha fortalecido aún más mis habilidades en el trabajo en equipo,
+                                la resolución de problemas y la gestión efectiva del tiempo
+                                y gestionar mi tiempo de manera efectiva.
                                 <br />
 
                             </div>
