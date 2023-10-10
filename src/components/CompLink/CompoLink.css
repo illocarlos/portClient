@@ -23,10 +23,9 @@
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     width: 50px;
     height: 50px;
-    padding: 4px;
+    padding: 3px;
     border-radius: 50%;
     border: 6px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
@@ -35,13 +34,11 @@
     transition: transform 0.5s;
 }
 
+
 .button-CV:hover {
     color: white;
     text-decoration: none;
 }
-
-
-
 
 
 .dropdown-menu.centered {
@@ -78,9 +75,7 @@
         display: none;
 
     }
-
 }
-
 
 .dropdown-menu.show.centered {
 
@@ -101,7 +96,7 @@
     }
 
     100% {
-        left: -70px;
+        left: 0px;
     }
 
 }

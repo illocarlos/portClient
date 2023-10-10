@@ -44,7 +44,7 @@ const Index = () => {
 
                                     <Button to={'/Contact'}
                                         onClick={() => setShowModal(true)}
-                                        className="ButtonEmail d-none d-sm-inline"
+                                        className="ButtonEmail mt-1 d-none d-sm-inline"
                                         type="submit" title='send mail'>
 
                                         <img className='openButton' src={'/close.png'} alt="mail" />
