@@ -37,14 +37,14 @@ const CompoLink = () => {
                         <Link className='linkGit mr-3' to={"https://github.com/illocarlos"} target="_blank" title='go to Git Hub'>
                             <div className='mt-2 imageContainer'>
 
-                                <img style={{ width: '40px', height: '47px' }} className='Git' src={"../../../public/git.png"} alt="Git" />
+                                <img style={{ width: '40px', height: '47px' }} className='Git' src={"/git.png"} alt="Git" />
                             </div>
                         </Link>
                     </Dropdown.Item>
                     <Dropdown.Item href="#action/3.3">
                         <Link className='linklinked mr-3' to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"} title='go to  linkedln'>
                             <div className='imageContainer'>
-                                <img style={{ width: '40px', height: '50px' }} className='linked' src={"../../../public/linked.png"} alt="Linked" />
+                                <img style={{ width: '40px', height: '50px' }} className='linked' src={"/linked.png"} alt="Linked" />
                             </div>
                         </Link>
                     </Dropdown.Item>
@@ -54,8 +54,8 @@ const CompoLink = () => {
                             onClick={() => setShowModal(true)}
                             className="ButtonEmail"
                             type="submit" title='send mail'>
-                            <img style={{ width: '40px', height: '50px' }} className='openButton' src={'../../../public/close.png'} alt="mail" />
-                            <img style={{ width: '40px', height: '50px' }} className='closeButton' src={"../../../public/open.png"} alt="mail" />
+                            <img style={{ width: '40px', height: '50px' }} className='openButton' src={'/close.png'} alt="mail" />
+                            <img style={{ width: '40px', height: '50px' }} className='closeButton' src={"/open.png"} alt="mail" />
 
 
                         </Button>
@@ -75,7 +75,7 @@ const CompoLink = () => {
                 to={"https://github.com/illocarlos"}
                 target="_blank" title='go to Git Hub'>
                 <div className='imageContainer'>
-                    <img className='Git' src={"../../../public/git.png"} alt="Git" />
+                    <img className='Git' src={"/git.png"} alt="Git" />
                 </div>
             </Link>
 
@@ -83,7 +83,7 @@ const CompoLink = () => {
                 to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"}
                 title='go to  linkedln'>
                 <div className='imageContainer'>
-                    <img className='linked' src={"../../../public/linked.png"} alt="Linked" />
+                    <img className='linked' src={"/linked.png"} alt="Linked" />
                 </div>
             </Link>
 

@@ -17,7 +17,7 @@ const Footer = () => {
                     to={"https://github.com/illocarlos"}
                     target="_blank" title='go to Git Hub'>
                     <div className='imageContainer'>
-                        <img className='Git' src={'../../../public/git.png'} alt="Git" />
+                        <img className='Git' src={'/git.png'} alt="Git" />
                     </div>
                 </Link>
 
@@ -25,7 +25,7 @@ const Footer = () => {
                     to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"}
                     title='go to  linkedln'>
                     <div className='imageContainer'>
-                        <img className='linked' src={'../../../public/linked.png'} alt="Linked" />
+                        <img className='linked' src={'/linked.png'} alt="Linked" />
                     </div>
                 </Link>
 

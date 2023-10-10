@@ -29,7 +29,7 @@ const Index = () => {
                                     <Row>
 
                                         <Col md={2} className="order-1 order-md-1  d-none d-sm-inline ">
-                                            <img className='logoImg' src={"../../../ public / akat.png"} />
+                                            <img className='logoImg' src={"/akat.png"} />
                                         </Col>
 
                                         <Col md={12} className="order-1 order-md-1  ">
@@ -47,8 +47,8 @@ const Index = () => {
                                         className="ButtonEmail d-none d-sm-inline"
                                         type="submit" title='send mail'>
 
-                                        <img className='openButton' src={'../../../public/close.png'} alt="mail" />
-                                        <img className='closeButton' src={'../../../public/open.png'} alt="mail" />
+                                        <img className='openButton' src={'/close.png'} alt="mail" />
+                                        <img className='closeButton' src={'/open.png'} alt="mail" />
 
 
                                     </Button>
