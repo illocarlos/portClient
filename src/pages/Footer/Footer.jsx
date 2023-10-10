@@ -7,7 +7,7 @@ const Footer = () => {
 
         <div className='Footer mt-5'>
 
-            <div className='navIcon'>
+            <div className='navIcon-foother'>
                 <Link className='button-CV-foother  mr-3 d-sm-inline'
                     to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'}
                     target="_blank" >

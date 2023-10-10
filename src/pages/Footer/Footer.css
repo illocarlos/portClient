@@ -10,7 +10,7 @@
 }
 
 
-.navIcon {
+.navIcon-foother {
 
     display: flex;
     flex-flow: row nowrap;
@@ -62,4 +62,13 @@
 .button-CV-foother:hover {
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 700px) {
+
+    .navIcon-foother {
+        display: none;
+
+    }
+
 }
