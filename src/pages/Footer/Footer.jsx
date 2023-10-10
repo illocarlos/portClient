@@ -9,7 +9,8 @@ const Footer = () => {
 
             <div className='navIcon'>
                 <Link className='button-CV-foother  mr-3 d-sm-inline'
-                    to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'} >
+                    to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'}
+                    target="_blank" >
                     CV
                 </Link>
 
@@ -23,7 +24,7 @@ const Footer = () => {
 
                 <Link className='linklinked-foother  mr-3  d-sm-inline '
                     to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"}
-                    title='go to  linkedln'>
+                    title='go to  linkedln' target="_blank" >
                     <div className='imageContainer'>
                         <img className='linked' src={'/linked.png'} alt="Linked" />
                     </div>
