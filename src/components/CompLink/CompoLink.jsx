@@ -23,7 +23,7 @@ const CompoLink = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu
-                    style={{ height: '300px' }}
+                    style={{ height: '350px' }}
                     align="end" className="centered extend-left slide-up scrollable">
                     <Dropdown.Item className='d-flex justify-content-center' >
                         <Link style={{ width: '43px', height: '50px' }} className='button-CV'

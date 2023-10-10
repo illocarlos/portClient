@@ -24,8 +24,8 @@
 
 .logoP {
 
-    font-size: 2.4rem;
-    margin-top: 10px;
+    font-size: 2.3rem;
+    margin-top: 6px;
     color: red;
     text-decoration: rgb(239, 239, 239);
     text-decoration: none;
@@ -39,7 +39,7 @@
     }
 
     .logoContainer {
-        margin-left: 50px;
+
         width: 100px;
     }
 }

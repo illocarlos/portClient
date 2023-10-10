@@ -8,7 +8,7 @@
 .button-CV {
     width: 100%;
     height: auto;
-    margin-top: 5px;
+    margin-top: 10px;
     transition: transform 0.5s;
 }
 
@@ -46,14 +46,13 @@
 
 .dropdown-menu.centered {
     background-color: rgba(0, 0, 0, 0.775);
-    width: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
     transform: scaleX(0);
-    left: -70px;
+    left: -90px;
     transform-origin: top right;
     transition: transform 0.5s ease-in-out;
 }
@@ -70,7 +69,7 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-    margin-right: 5px;
+
 }
 
 @media (min-width: 600px) {
@@ -90,7 +89,7 @@
 .dropdown-toggle-icon {
     transform: scaleX(-1);
     position: relative;
-    left: 100%;
+    left: 90%;
     animation: slideImage-mb 2s ease-in-out forwards;
 }
 
@@ -101,7 +100,7 @@
     }
 
     100% {
-        left: -40px;
+        left: -70px;
     }
 
 }
