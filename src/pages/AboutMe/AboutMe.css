@@ -32,6 +32,26 @@
 }
 
 
+@media (min-width: 700px) {
+
+    .PortFol {
+
+        background-image: url('/otrotro.jpg');
+        background-size: cover;
+        position: fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        z-index: -1;
+        position: relative;
+        transform-origin: top left;
+
+    }
+
+}
+
+
 .PortFol {
 
     background-image: url('/otrotro.jpg');
