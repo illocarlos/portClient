@@ -67,7 +67,8 @@ const CompoLink = () => {
 
 
             <Link className='button-CV  mr-3 d-none d-sm-inline'
-                to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'} >
+                to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'}
+                target="_blank" >
                 CV
             </Link>
 
