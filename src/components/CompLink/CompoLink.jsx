@@ -25,16 +25,18 @@ const CompoLink = () => {
                 <Dropdown.Menu
                     style={{ height: '350px' }}
                     align="end" className="centered extend-left slide-up scrollable">
-                    <Dropdown.Item className='d-flex justify-content-center' >
+                    <Dropdown.Item href="#action/3.1" className='d-flex justify-content-center' >
                         <Link style={{ width: '43px', height: '50px' }} className='button-CV'
-
-                            to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'} >
+                            to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'}
+                            target="_blank" >
 
                             CV
                         </Link>
                     </Dropdown.Item>
-                    <Dropdown.Item >
-                        <Link className='linkGit mr-3' to={"https://github.com/illocarlos"} title='go to Git Hub'>
+                    <Dropdown.Item href="#action/3.2" >
+                        <Link className='linkGit mr-3'
+                            target="_blank" to={"https://www.github.com/illocarlos"}
+                            title='go to Git Hub'>
                             <div className='mt-2 imageContainer'>
 
                                 <img style={{ width: '40px', height: '47px' }} className='Git' src={"/git.png"} alt="Git" />
@@ -44,7 +46,7 @@ const CompoLink = () => {
                     <Dropdown.Item href="#action/3.3">
                         <Link className='linklinked mr-3'
                             to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"}
-                            title='go to  linkedln'>
+                            target="_blank" title='go to  linkedln'>
                             <div className='imageContainer'>
                                 <img style={{ width: '40px', height: '50px' }} className='linked' src={"/linked.png"} alt="Linked" />
                             </div>
