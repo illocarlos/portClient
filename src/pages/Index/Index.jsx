@@ -6,9 +6,6 @@ import Contact from '../../components/Contact/Contact'
 import { Link } from 'react-router-dom'
 import NewWorkForm from '../../components/WorkComponents/NewWorkForm/NewWorkForm'
 import CompoLink from '../../components/CompLink/CompoLink';
-import open from '../../../public/close.png'
-import close from '../../../public/open.png'
-import akat from '../../../public/akat.png'
 
 const Index = () => {
     const [showModal, setShowModal] = useState(false)
@@ -32,7 +29,7 @@ const Index = () => {
                                     <Row>
 
                                         <Col md={2} className="order-1 order-md-1  d-none d-sm-inline ">
-                                            <img className='logoImg' src={akat} />
+                                            <img className='logoImg' src={"../../../ public / akat.png"} />
                                         </Col>
 
                                         <Col md={12} className="order-1 order-md-1  ">
@@ -50,8 +47,8 @@ const Index = () => {
                                         className="ButtonEmail d-none d-sm-inline"
                                         type="submit" title='send mail'>
 
-                                        <img className='openButton' src={open} alt="mail" />
-                                        <img className='closeButton' src={close} alt="mail" />
+                                        <img className='openButton' src={'../../../public/close.png'} alt="mail" />
+                                        <img className='closeButton' src={'../../../public/open.png'} alt="mail" />
 
 
                                     </Button>

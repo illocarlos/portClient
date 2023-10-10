@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import './EventGalleryPage.css'
 import workService from '../../../service/work.service'
 import WorkList from '../../../components/WorkComponents/WorkList/WorkList'
-import fonAkat from '../../../../public/FONDOak.png'
+
 const WorkGalleryPage = () => {
 
   const [works, setWork] = useState([])
