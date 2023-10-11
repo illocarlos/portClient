@@ -6,7 +6,7 @@ import workService from '../../../service/work.service'
 
 const DetailsWorkPage = () => {
 
-    const { work_id } = useParamsx()
+    const { work_id } = useParams()
     const { work, setWork } = useState({})
 
     useEffect(() => {
