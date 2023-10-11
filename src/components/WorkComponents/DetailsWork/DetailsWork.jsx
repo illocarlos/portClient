@@ -3,7 +3,7 @@ import './DetailsWork.css'
 import { Row, Col, Container } from "react-bootstrap"
 import { useEffect, useState } from 'react'
 import workService from '../../../service/work.service'
-import { Button } from "@nextui-org/react";
+
 const DetailsWork = () => {
 
 
@@ -22,9 +22,6 @@ const DetailsWork = () => {
             .getWorkDetails(work_id)
             .then(({ data }) => setWork(data))
             .catch(err => console.log(err))
-            .finally(() => {
-
-            })
     }
 
 
