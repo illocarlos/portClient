@@ -16,7 +16,7 @@ const DetailsWorkPage = () => {
     const loadWorkDetails = () => {
         workService
             .getWorkDetails(work_id)
-            .then(({ data }) => setWork(data))
+            .then((data) => setWork(data))
             .catch(err => console.log(err))
             .finally(() => {
                 setIsLoading(false)
@@ -30,6 +30,7 @@ const DetailsWorkPage = () => {
     return (
         <div className="d-flex justify-content-center">
             <Container>
+                <h1>halooooooooooo!!!!!</h1>
                 <h1>{work.description}</h1>
             </Container >
         </div >
