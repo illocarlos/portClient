@@ -4,6 +4,7 @@ import SignupPage from '../pages/Auth/SignupPage/SignupPage'
 import LoginPage from '../pages/Auth/LoginPage/LoginPage'
 import PrivateRoute from './PrivateRoutes'
 import NewWorkPage from '../pages/Work/NewWorkPage/NewWorkPage'
+import DetailsWorkPage from '../pages/Work/DetailsWorkPage/DetailsWorkPage'
 
 
 
@@ -14,15 +15,11 @@ const AppRoutes = () => {
             <Route path='/' />
             <Route path='/Contact' element={<FormContactPage />} />
             <Route path={"/auth/login"} element={<LoginPage />} />
-
+            <Route path={"/work/:work_id"} element={<DetailsWorkPage />} />
 
             <Route element={<PrivateRoute />}>
                 <Route path='/NewWorkForm' element={<NewWorkPage />} />
                 <Route path={"/work/delete/:work_id"} />
-                <Route path={"/work/edit/:work_id"} element={<p>"/work/edit/:work_id"</p>} />
-                <Route path={"/work/newWork"} element={<p>"/work/newWork"</p>} />
-                <Route path={"/user/:user_id"} element={<p>"/user/:user_id"</p>} />
-                <Route path={"/user/edit/:user_id"} element={<p>"/user/edit/:user_id"</p>} />
                 <Route path={"/auth/signup"} element={<SignupPage />} />
             </Route>
             <Route path='*' element={<h1> NOTHING BUT YOU ARE INSIDE </h1>} />
