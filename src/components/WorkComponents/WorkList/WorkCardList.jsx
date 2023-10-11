@@ -3,7 +3,7 @@ import './WorkCardList.css'
 
 
 
-const WorkList = ({ description, workImage, link, _id, gitHub }) => {
+const WorkList = ({ title, description, workImage, link, _id, gitHub }) => {
     return (
         <div className="work-card" key={_id}>
             <div className="work-content">
@@ -13,7 +13,7 @@ const WorkList = ({ description, workImage, link, _id, gitHub }) => {
                         className="work-avatar"
                         style={{ backgroundImage: `url(${workImage})` }}>
 
-                        <h1 className="work-name ">{description}</h1>
+                        <h1 className="work-name ">{title}</h1>
                     </div>
                 </Link>
             </div>

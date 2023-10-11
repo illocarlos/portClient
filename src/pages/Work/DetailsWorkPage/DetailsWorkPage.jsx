@@ -31,7 +31,7 @@ const DetailsWorkPage = () => {
         <div className="d-flex justify-content-center">
             <Container>
                 <h1>halooooooooooo!!!!!</h1>
-                <h1>{work.description}</h1>
+                <h1>{work.title}</h1>
             </Container >
         </div >
     )
