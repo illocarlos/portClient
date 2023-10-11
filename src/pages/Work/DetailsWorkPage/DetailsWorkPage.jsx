@@ -13,7 +13,9 @@ const DetailsWorkPage = () => {
         loadWorkDetails()
     }, [])
 
+
     const loadWorkDetails = () => {
+        console.log("--------->", work_id, work)
         workService
             .getWorkDetails(work_id)
             .then(({ data }) => setWork(data))
