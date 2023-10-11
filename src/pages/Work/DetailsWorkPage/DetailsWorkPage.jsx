@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap"
 import { useEffect, useState } from 'react'
 import workService from '../../../service/work.service'
 
-const DetailsWorkPage = () => {
+const DetailsWorkPage = ({ work_id }) => {
 
     const { work_id } = useParams()
     const { work, setWork } = useState({})
