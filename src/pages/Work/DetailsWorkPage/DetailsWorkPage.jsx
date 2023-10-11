@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap"
 import { useEffect, useState } from 'react'
 import workService from '../../../service/work.service'
 
-const DetailsWorkPage = ({ work_id }) => {
+const DetailsWorkPage = () => {
 
     const { work_id } = useParams()
     const { work, setWork } = useState({})
@@ -16,12 +16,8 @@ const DetailsWorkPage = ({ work_id }) => {
     const loadWorkDetails = () => {
         workService
             .getWorkDetails(work_id)
-            .then((data) => setWork(data))
+            .then(({ data }) => setWork(data))
             .catch(err => console.log(err))
-            .finally(() => {
-                setIsLoading(false)
-            })
-
     }
 
 
