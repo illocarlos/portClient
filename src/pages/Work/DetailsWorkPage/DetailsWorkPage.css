@@ -1,3 +1,39 @@
-h1 {
-    color: white;
+.DetailsWorkPage {
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: #000000df;
+    position: absolute;
+}
+
+
+
+
+
+@media (min-width: 700px) {
+
+    .DetailsWorkPage {
+
+        position: fixed;
+        width: 100vw;
+        height: 90vh;
+        top: 11%;
+        z-index: 10;
+
+    }
+}
+
+@media (max-width: 700px) {
+
+    .DetailsWorkPage {
+
+        position: fixed;
+        width: 105vw;
+        height: 120vh;
+        top: 0%;
+        z-index: 10;
+
+    }
+
 }

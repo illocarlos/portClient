@@ -23,7 +23,7 @@ class WorkService {
   }
 
   getWorkDetails(work_id) {
-    return this.api.get(`/${work_id}`);
+    return this.api.get(`/${work_id}`, work_id);
   }
 
   newWork(workData) {

@@ -24,7 +24,7 @@ const Index = () => {
 
                             <Link to={"/auth/login"} className=" ocultP ">.</Link>
 
-                            <Link className='logo' to={"/"}>
+                            <Link className='logo' to="/">
                                 <div className='logoContainer mt-2'>
                                     <Row>
 
@@ -33,7 +33,7 @@ const Index = () => {
                                         </Col>
 
                                         <Col md={12} className="order-1 order-md-1  ">
-                                            <p className='logoP'> Carlos Albendiz  </p>
+                                            <p className='logoP' id="sectionToScrollTo"> Carlos Albendiz  </p>
                                         </Col>
                                     </Row>
                                 </div>

@@ -30,7 +30,7 @@ const CompoLink = () => {
                             to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'}
                             target="_blank" >
 
-                            <p> CV</p>
+                            <p className='but-cv-p'> CV</p>
                         </Link>
                     </Dropdown.Item>
                     <Dropdown.Item href="#action/3.2" >

@@ -13,6 +13,7 @@ const AboutMe = () => {
 
                     <Row className=" d-flex justify-content-center">
                         <Col md={6} className="order-1 order-md-1">
+
                             <div className='articleAboutMe'>
                                 Soy un desarrollador web que cursé el bootcamp de Ironhack.
                                 Me destaco por mi capacidad para resolver problemas,
