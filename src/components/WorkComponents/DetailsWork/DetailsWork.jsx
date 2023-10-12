@@ -35,7 +35,7 @@ const DetailsWork = () => {
                         <div>
                             <Container>
                                 <h1>{work.title}</h1>
-                                <article> {work.description}Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem provident cum corrupti ipsum necessitatibus sed, sequi quibusdam quis assumenda dolore nihil quidem corporis. Consectetur ipsam facere autem esse expedita repellendus!</article>
+                                <article> {work.description}</article>
                             </Container>
                         </div>
                         <div className='div-Link'>
