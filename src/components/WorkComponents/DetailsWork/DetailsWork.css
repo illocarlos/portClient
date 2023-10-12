@@ -82,9 +82,11 @@ article {
 
 @media (max-width: 700px) {
 
-    .DetailsWork {}
+    .DetailsWork {
+        margin-bottom: 100px;
+    }
 
-    .div-description {}
+
 
 
 }
