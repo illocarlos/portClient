@@ -32,12 +32,12 @@ const DetailsWork = () => {
             <Row>
                 <Col sm={12} md={6} lg={6} className=" order-sm-2">
                     <div className='div-description'>
-                        <div className='div-article'>
-                            <Container>
+                        <Container>
+                            <div className='div-article'>
                                 <h1>{work.title}</h1>
-                                <article> {work.description}</article>
-                            </Container>
-                        </div>
+                                <article className='mt-5'> {work.description}</article>
+                            </div>
+                        </Container>
                         <div className='div-Link'>
                             <Link class="custom-button ml-2" to={work.link}>web</Link>
                             <Link class="custom-button ml-2" to={work.gitHub}>gitHub </Link>ç
