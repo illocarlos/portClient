@@ -34,7 +34,7 @@ const DetailsWork = () => {
                     <div className='div-description'>
                         <Container>
                             <div className='div-article'>
-                                <h1>{work.title}</h1>
+                                <h1 className='hDetails'>{work.title}</h1>
                                 <article className='mt-5'> {work.description}</article>
                             </div>
                         </Container>

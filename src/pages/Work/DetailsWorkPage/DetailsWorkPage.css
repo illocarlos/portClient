@@ -4,7 +4,7 @@
     flex-flow: row nowrap;
     align-items: center;
     background-color: #000000df;
-    position: absolute;
+    position: relative;
 }
 
 
@@ -32,7 +32,7 @@
         width: 105vw;
         height: 120vh;
         top: 0%;
-        z-index: 10;
+        z-index: 100;
 
     }
 
