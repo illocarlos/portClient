@@ -1,5 +1,8 @@
 h1 {
-    color: white;
+    background-image: linear-gradient(20deg, #ff0000 20%, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;

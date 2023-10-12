@@ -23,14 +23,19 @@
 }
 
 .logoP {
-
     font-size: 2.3rem;
     margin-top: 6px;
-    color: red;
-    text-decoration: rgb(239, 239, 239);
+    background-image: linear-gradient(20deg, #ff0000 30%, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     text-decoration: none;
     z-index: 2;
+    position: relative;
 }
+
+
+
 
 @media (max-width: 607px) {
     .logoP {
@@ -44,11 +49,6 @@
     }
 }
 
-.logoP:hover {
-
-    color: white;
-
-}
 
 .logo:hover {
     text-decoration: none;
