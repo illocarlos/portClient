@@ -32,7 +32,7 @@ const DetailsWork = () => {
             <Row>
                 <Col sm={12} md={6} lg={6} className=" order-sm-2">
                     <div className='div-description'>
-                        <div>
+                        <div className='div-article'>
                             <Container>
                                 <h1>{work.title}</h1>
                                 <article> {work.description}</article>

@@ -30,7 +30,11 @@ article {
 
 .DetailsWork {
     width: 100%;
-    height: 100%;
+    height: 80%;
+}
+
+.div-article {
+    height: 60%;
 }
 
 .work-image {
