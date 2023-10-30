@@ -1,7 +1,7 @@
 .Index {
     background-color: rgba(0, 0, 0, 0.617);
     width: 100vw;
-
+    z-index: 20;
 
 }
 
