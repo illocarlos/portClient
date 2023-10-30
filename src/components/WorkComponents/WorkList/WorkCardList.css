@@ -3,6 +3,7 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    margin-top: 20px;
     transition: transform 1s;
 
 }
