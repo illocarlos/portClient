@@ -5,6 +5,7 @@ import App from './App'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { AuthProviderWrapper } from './contexts/auth.context'
 import { MessageProviderWrapper } from '../src/contexts/message.context'
+import Index from './pages/Index/Index';
 
 
 
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
       <Router>
         <AuthProviderWrapper>
+          <Index />
           <App />
         </AuthProviderWrapper>
       </Router>
