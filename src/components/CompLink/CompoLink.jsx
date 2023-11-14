@@ -26,8 +26,8 @@ const CompoLink = () => {
                     style={{ height: '350px' }}
                     align="end" className="centered extend-left slide-up scrollable">
                     <Dropdown.Item href="#action/3.1" className='d-flex justify-content-center' >
-                        <Link style={{ width: '43px', height: '50px' }} className='button-CV'
-                            to={'https://drive.google.com/file/d/1FP-1x5Z4zX4sMN39TBZvgzBvaR3eYy6R/view?usp=sharing'}
+                        <Link className='Link-button-cv-dropdown button-CV'
+                            to={'https://drive.google.com/file/d/10oeBAndf8Isocy-4dxgoa5qFweQzmxjE/view?usp=drive_link'}
                             target="_blank" >
 
                             <p className='but-cv-p'> CV</p>
@@ -37,7 +37,7 @@ const CompoLink = () => {
                         <Link className='linkGit mr-3'
                             target="_blank" to={"https://www.github.com/illocarlos"}
                             title='go to Git Hub'>
-                            <div className='mt-2 imageContainer'>
+                            <div className='mt-3 imageContainer'>
 
                                 <img style={{ width: '40px', height: '47px' }} className='Git' src={"/git.png"} alt="Git" />
                             </div>

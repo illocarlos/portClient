@@ -72,9 +72,6 @@ const Index = () => {
                                 <Contact setShowModal={setShowModal} />
                             </Modal.Body>
                         </Modal>
-
-
-
                     </>
                 }
                 {

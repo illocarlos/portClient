@@ -25,7 +25,7 @@
     flex-flow: row nowrap;
     width: 50px;
     height: 50px;
-    padding: 3px;
+    padding: 4px;
     border-radius: 50%;
     border: 6px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
@@ -34,6 +34,12 @@
     transition: transform 0.5s;
 }
 
+.Link-button-cv-dropdown {
+    width: 43px;
+    height: 50px;
+    margin-top: 20px;
+    padding: 4px;
+}
 
 .button-CV:hover {
     color: white;
@@ -60,8 +66,8 @@
     background-color: transparent;
     border-radius: 40%;
     transform: scaleX(-1);
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     background-image: url('../../../public/akat.png');
     background-size: cover;
     background-repeat: no-repeat;
