@@ -27,7 +27,7 @@ const CompoLink = () => {
                     align="end" className="centered extend-left slide-up scrollable">
                     <Dropdown.Item href="#action/3.1" className='d-flex justify-content-center' >
                         <Link className='Link-button-cv-dropdown button-CV'
-                            to={'https://drive.google.com/file/d/10oeBAndf8Isocy-4dxgoa5qFweQzmxjE/view'}
+                            to={'www.facebook.com'}
                             target="_blank" >
 
                             <p className='but-cv-p'> CV</p>
