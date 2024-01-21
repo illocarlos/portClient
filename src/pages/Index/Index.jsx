@@ -16,7 +16,7 @@ const Index = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
     const handleScroll = () => {
-        setIsNavbarTransparent(window.scrollY > 80);
+        setIsNavbarTransparent(window.scrollY > 60);
     };
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const Index = () => {
 
     return (
         <div className='Index'
-            style={{ backgroundColor: isNavbarTransparent ? 'rgba(0, 0, 0, 0.5)' : 'transparent', padding: '10px' }}>
+            style={{ backgroundColor: isNavbarTransparent ? 'rgba(0, 0, 0, 0.6)' : 'black', padding: '10px' }}>
 
 
             <div className='navBar' >
