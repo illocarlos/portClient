@@ -1,7 +1,7 @@
 import './Index.css'
 import { AuthContext } from "../../contexts/auth.context";
 import { Navbar, Button, Modal, Row, Col } from 'react-bootstrap'
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Contact from '../../components/Contact/Contact'
 import { Link } from 'react-router-dom'
 import NewWorkForm from '../../components/WorkComponents/NewWorkForm/NewWorkForm'
@@ -10,12 +10,32 @@ import CompoLink from '../../components/CompLink/CompoLink';
 const Index = () => {
     const [showModal, setShowModal] = useState(false)
     const { loggedUser, logout } = useContext(AuthContext)
+    const [isNavbarTransparent, setIsNavbarTransparent] = useState(false);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    const handleScroll = () => {
+        setIsNavbarTransparent(window.scrollY > 80);
+    };
+
+    useEffect(() => {
+        // Agregamos el evento de scroll cuando el componente está montado
+        window.addEventListener('scroll', handleScroll);
+
+        // Limpiamos el evento cuando el componente se desmonta
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
 
     return (
-        <div className='Index'>
+        <div className='Index'
+            style={{ backgroundColor: isNavbarTransparent ? 'rgba(0, 0, 0, 0.5)' : 'transparent', padding: '10px' }}>
 
 
-            <div className='navBar'>
+            <div className='navBar' >
 
                 {
                     !loggedUser &&
@@ -33,7 +53,7 @@ const Index = () => {
                                         </Col>
 
                                         <Col md={12} className="order-1 order-md-1  ">
-                                            <p className='logoP' id="sectionToScrollTo"> Carlos Albendiz  </p>
+                                            <p onClick={scrollToTop} className='logoP' id="sectionToScrollTo"> Carlos Albendiz  </p>
                                         </Col>
                                     </Row>
                                 </div>

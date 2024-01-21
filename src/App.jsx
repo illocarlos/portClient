@@ -1,6 +1,5 @@
 import './App.css'
 import UserMessage from '../src/components/UserMessage/UserMessage'
-import Index from './pages/Index/Index'
 import PortFol from './pages/Portfol/Portfol'
 import WorkGalleryPage from './pages/Work/WorkGalleryPage/WorkGalleryPage'
 import Footer from './pages/Footer/Footer'
