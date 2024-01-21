@@ -15,28 +15,27 @@ const AboutMe = () => {
                         <Col md={6} className="order-1 order-md-1">
 
                             <div className='articleAboutMe'>
-                                Soy un desarrollador web que me destaco por mi capacidad para resolver problemas,
-                                trabajar bajo presión y ser responsable,
-                                habilidades que adquirí durante mis 7 años de servicio en el ejército.
-                                Desde que descubrí el mundo de la tecnología y la programación,
-                                he estado ansioso por aplicar mis conocimientos y aptitudes en este campo.
+
+                                Como desarrollador web, sobresalgo por mi destreza en resolver problemas,
+                                manejar presión y actuar con responsabilidad;
+                                habilidades forjadas durante mis 7 años de servicio militar. Desde mi inmersión en la tecnología y programación,
+                                anhelo aplicar mis conocimientos y aptitudes en este campo con determinación.
                                 <br />
                                 <br />
-                                Mi objetivo principal es integrarme en un equipo de desarrollo
-                                tecnológico que me brinde la oportunidad de aprender y crecer aún más en este sector.
-                                Busco un entorno en el que pueda ser creativo
-                                y donde se me enseñe a adaptarme a diversos desafíos,
-                                lo que me permitirá seguir avanzando constantemente en mi carrera.
+                                Mi enfoque principal es unirme a un equipo de desarrollo tecnológico que ofrezca
+                                la oportunidad de aprender y expandir mis habilidades en este sector. Busco un entorno donde
+                                la creatividad sea valorada y donde se fomente la capacidad de adaptarse a diversos desafíos.
+                                Esto me permitirá continuar avanzando constantemente en mi carrera.
                                 <br />
                                 <br />
-                                Desde que comencé mi formación,
-                                he tenido la oportunidad de trabajar en proyectos tanto individuales como en equipo.
-                                Esto me ha permitido adquirir experiencia en el desarrollo front-end,
-                                utilizando tecnologías como CSS, HTML y Bootstrap,React,Vue,Tailwind y SASS así como en el desarrollo back-end,
-                                utilizando JavaScript,Firebase, Node.js,Mongodb y Express.js. Además,
-                                he trabajado en un entorno de trabajo basado en Scrum,
-                                lo que ha fortalecido aún más mis habilidades en el trabajo en equipo,
-                                la resolución de problemas y la gestión efectiva del tiempo
+                                Desde el inicio de mi formación, he participado en proyectos tanto individuales como en equipo,
+                                proporcionándome una valiosa experiencia en el desarrollo front-end. He trabajado con tecnologías
+                                como CSS, HTML, Bootstrap, React, Vue, Tailwind y SASS. Además, he explorado el ámbito del desarrollo
+                                back-end, utilizando JavaScript, Firebase, Node.js, MongoDB y Express.js.
+                                Mi participación en un entorno de trabajo basado en Scrum ha contribuido significativamente al
+                                fortalecimiento de mis habilidades en trabajo en equipo, resolución de problemas y gestión efectiva
+                                del tiempo. Estoy preparado para enfrentar desafíos de manera colaborativa y utilizar mis habilidades
+                                técnicas para contribuir al éxito de proyectos innovadores.
                                 <br />
 
                             </div>
