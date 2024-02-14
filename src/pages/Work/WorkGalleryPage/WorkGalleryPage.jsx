@@ -6,21 +6,24 @@ import Loader from '../../../components/Loader/Loader'
 
 const WorkGalleryPage = () => {
   const [works, setWorks] = useState([])
-
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     loadWorks()
+
   }, [])
 
   const loadWorks = () => {
+
     workService
       .getWorks()
       .then(({ data }) => {
         setWorks(data)
-
+        setLoading(false)
       })
       .catch((err) => {
         console.log(err)
+        setLoading(true)
       })
   }
 
@@ -32,8 +35,8 @@ const WorkGalleryPage = () => {
         <h3>PROYECTOS</h3>
       </div>
 
-      {works.length === 0 ? (
-        <Loader className='positionLoader' />
+      {loading ? (
+        <Loader />
       ) : (
         <WorkList works={works} />
       )}

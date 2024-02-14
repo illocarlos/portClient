@@ -55,8 +55,4 @@
      color: rgb(0, 0, 0);
 
  }
- .positionLoader{
-    display: flex;
-    flex-flow:row nowrap ;
-    justify-content: center;
- }
+ 
