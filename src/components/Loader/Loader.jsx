@@ -1,10 +1,11 @@
-import { Spinner } from "react-bootstrap"
+import './Loader.css'
 
 const Loader = () => {
     return (
-        <Spinner animation="border" role="status">
-            <span className="visually-hidden">Cargando...</span>
-        </Spinner>
+        <div className='positionLoader'>
+            <div className="loader"></div>
+            <div className="loader2"></div>
+        </div>
     )
 }
 
