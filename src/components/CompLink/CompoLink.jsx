@@ -13,41 +13,37 @@ const CompoLink = () => {
     return (
         <>
 
-
             <Dropdown >
-
-
-
                 <Dropdown.Toggle className='dropdown-toggle-icon d-md-none ' variant='danger'>
 
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu
-                    style={{ height: '350px' }}
+                    style={{ height: 'auto' }}
                     align="end" className="centered extend-left slide-up scrollable">
                     <Dropdown.Item href="#action/3.1" className='d-flex justify-content-center' >
-                        <Link className='Link-button-cv-dropdown button-CV'
-                            to={'https://drive.google.com/file/d/10oeBAndf8Isocy-4dxgoa5qFweQzmxjE/view?usp=drive_link'}
+                        <Link className=' ml-3 Link-button-cv-dropdown button-CV'
+                            to={'https://drive.google.com/file/d/1N6UJEGMv43T9To9OEnUhuIEsgMQNUAIc/view?usp=sharing'}
                             target="_blank" >
 
                             <p className='but-cv-p'> CV</p>
                         </Link>
                     </Dropdown.Item>
                     <Dropdown.Item href="#action/3.2" >
-                        <Link className='linkGit mr-3'
+                        <Link className='linkGit'
                             target="_blank" to={"https://www.github.com/illocarlos"}
                             title='go to Git Hub'>
-                            <div className='mt-3 imageContainer'>
+                            <div className='ml-3 mt-2  imageContainer'>
 
                                 <img style={{ width: '40px', height: '47px' }} className='Git' src={"/git.png"} alt="Git" />
                             </div>
                         </Link>
                     </Dropdown.Item>
                     <Dropdown.Item href="#action/3.3">
-                        <Link className='linklinked mr-3'
+                        <Link className='linklinked'
                             to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"}
                             target="_blank" title='go to  linkedln'>
-                            <div className='imageContainer'>
+                            <div className='ml-3 mt-2 imageContainer'>
                                 <img style={{ width: '40px', height: '50px' }} className='linked' src={"/linked.png"} alt="Linked" />
                             </div>
                         </Link>
@@ -56,7 +52,7 @@ const CompoLink = () => {
                     <Dropdown.Item href="#action/3.4">
                         <Button to={'/Contact'}
                             onClick={() => setShowModal(true)}
-                            className="ButtonEmail"
+                            className=" ml-1 mt-2 ButtonEmail"
                             type="submit" title='send mail'>
                             <img style={{ width: '40px', height: '50px' }} className='openButton' src={'/close.png'} alt="mail" />
                             <img style={{ width: '40px', height: '50px' }} className='closeButton' src={"/open.png"} alt="mail" />
@@ -71,7 +67,7 @@ const CompoLink = () => {
 
 
             <Link className='button-CV  mr-3 d-none d-sm-inline'
-                to={'https://drive.google.com/file/d/10oeBAndf8Isocy-4dxgoa5qFweQzmxjE/view?usp=sharing'}
+                to={'https://drive.google.com/file/d/1N6UJEGMv43T9To9OEnUhuIEsgMQNUAIc/view'}
                 target="_blank" >
                 CV
             </Link>
