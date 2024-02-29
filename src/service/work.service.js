@@ -4,7 +4,7 @@ class WorkService {
 
   constructor() {
     this.api = axios.create({
-      baseURL: `${import.meta.env.VITE_API_URL}/work`,
+      baseURL: `${import.meta.env.VITE_API_URL}/works`,
     });
 
     this.api.interceptors.request.use((config) => {
