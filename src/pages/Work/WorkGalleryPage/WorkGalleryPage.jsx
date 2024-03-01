@@ -7,29 +7,38 @@ import Loader from '../../../components/Loader/Loader'
 const WorkGalleryPage = () => {
   const [works, setWorks] = useState([])
   const [loading, setLoading] = useState(true)
-  const [isScrolled, setIsScrolled] = useState(false);
+
+  const [isScrolledMobile, setIsScrolledMobile] = useState(false)
+  const [isScrolledLaptop, setIsScrolledLaptop] = useState(false)
 
   useEffect(() => {
     loadWorks()
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      if (scrollPosition < 600) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
 
-    window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      let scrollPositionWork = window.scrollY
+      let scrollPositionWorklapto = window.scrollY
+      // Determinar si es un dispositivo móvil o portátil basado en el scroll
+      if (scrollPositionWork > 2500) {
+        setIsScrolledMobile(false)
+      } else if (scrollPositionWorklapto < 1200) {
+        setIsScrolledLaptop(true)
+      } else {
+
+        setIsScrolledMobile(true)
+        setIsScrolledLaptop(false)
+      }
+
+    }
+
+    window.addEventListener('scroll', handleScroll)
 
     // Limpiar el event listener en el cleanup de useEffect
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+      window.removeEventListener('scroll', handleScroll)
+    }
   }, [])
 
   const loadWorks = () => {
-
     workService
       .getWorks()
       .then(({ data }) => {
@@ -42,15 +51,19 @@ const WorkGalleryPage = () => {
       })
   }
 
-
   return (
     <>
-      <div className='backgroungImgWork'>
-        <div className={` ${isScrolled ? 'romRotateProyect' : 'scrolledProyect'}`} ></div>
-        <h1 className={` ${isScrolled ? 'romRotateSkillhProyect1' : 'scrolledProyecth1'}`}  >PROYECTOS</h1>
-        <h3 className={` ${isScrolled ? 'romRotateSkillProyecth3' : 'scrolledProyecth3'}`} >PROYECTOS</h3>
+      <div className='backgroungImgWork '>
+        <div className={` ${isScrolledMobile ? 'romRotateProyect' : 'scrolledProyect'}`} ></div>
+        <h1 className={` ${isScrolledMobile ? 'romRotateSkillhProyect1' : 'scrolledProyecth1'}`}  >PROYECTOS</h1>
+        <h3 className={` ${isScrolledMobile ? 'romRotateSkillProyecth3' : 'scrolledProyecth3'}`} >PROYECTOS</h3>
       </div>
 
+      <div className='backgroungImgWorkLapto '>
+        <div className={` ${isScrolledLaptop ? 'romRotateProyect' : 'scrolledProyect'}`} ></div>
+        <h1 className={` ${isScrolledLaptop ? 'romRotateSkillhProyect1' : 'scrolledProyecth1'}`}  >PROYECTOS</h1>
+        <h3 className={` ${isScrolledLaptop ? 'romRotateSkillProyecth3' : 'scrolledProyecth3'}`} >PROYECTOS</h3>
+      </div>
       {loading ? (
         <Loader />
       ) : (

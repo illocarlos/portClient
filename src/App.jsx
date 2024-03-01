@@ -16,8 +16,8 @@ function App() {
     <div className='App'>
 
       <PortFol />
-      <WorkGalleryPage />
       <SkillPage />
+      <WorkGalleryPage />
       <AppRoutes />
       <UserMessage />
       <Footer />
