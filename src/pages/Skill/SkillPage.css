@@ -107,16 +107,17 @@
 .skillsCard{
     width:9rem;
     margin-left: 2rem;
+    margin-top: 2rem;
 }
 .skillsImages {
     height: 100%;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 @media (min-width: 300px) and (max-width: 700px) {
     .skillsCard{
-    width:4rem;
+    width:5rem;
 }
   
 
