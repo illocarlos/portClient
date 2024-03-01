@@ -9,7 +9,7 @@
      transform-origin: center;
      border-radius: 10%;
      animation: rotate 6s linear infinite;
-      transition: all 2s ease;
+      transition: all 3s ease;
  }
 @keyframes rotate {
      0% {
@@ -34,7 +34,7 @@
      box-shadow: -5px -42px 90px 40px rgb(214, 9, 9);
      transform-origin: center;
      border-radius: 10%;
-    transition: all 2s ease ;  
+    transition: all 3s ease ;  
      animation: reduceDiv  3s   ease; 
  }
 
