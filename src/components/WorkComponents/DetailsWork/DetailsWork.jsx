@@ -52,7 +52,7 @@ const DetailsWork = () => {
                                     {work.icon && work.icon.map((icon, index) => (
                                         <Col key={index} sm={12} md={3} lg={4} className="iconOrder mt-lg-4">
 
-                                            <img src={`/assets/${icon}.svg`} />
+                                            <img src={`/assets/Icons/${icon}.svg`} />
 
                                         </Col>
                                     ))}
@@ -62,9 +62,9 @@ const DetailsWork = () => {
                             </div>
                         </Container>
                         <div className='div-Link'>
-                            <Link className="custom-button ml-2" to={work.link}>web</Link>
-                            <Link className="custom-button ml-2" to={work.gitHub}>gitHub</Link>
-                            <Link className="custom-button ml-2" to={"/"}>volver</Link>
+                            <Link target='_blank' className="custom-button ml-2" to={work.link}>web</Link>
+                            <Link target='_blank' className="custom-button ml-2" to={work.gitHub}>gitHub</Link>
+                            <Link target='_blank' className="custom-button ml-2" to={"/"}>volver</Link>
                         </div>
                     </div>
 

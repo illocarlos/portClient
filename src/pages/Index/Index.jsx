@@ -32,7 +32,7 @@ const Index = () => {
 
     return (
         <div className='Index'
-            style={{ backgroundColor: isNavbarTransparent ? 'rgba(0, 0, 0, 0.828)' : 'black', padding: '10px' }}>
+            style={{ backgroundColor: isNavbarTransparent ? 'rgba(0, 0, 0, 0.528)' : 'black' }}>
 
 
             <div className='navBar' >

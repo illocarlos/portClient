@@ -1,57 +1,55 @@
 
- .romRotateProyect {
+ .romRotateSkill {
      position: absolute;
      z-index: -2;
-     width: 190px;
-     height: 190px;
+     width: 90px;
+     height: 90px;
      background-color: rgb(221, 22, 22);
      box-shadow: -5px 5px 90px 9px rgb(214, 9, 9);
      transform-origin: center;
      border-radius: 10%;
-     animation: rotateProyect 6s linear infinite;
-        transition: all 2s ease;
+     animation: rotate 6s linear infinite;
+      transition: all 2s ease;
  }
-
- @keyframes rotateProyect {
+@keyframes rotate {
      0% {
          transform: rotate(0deg);
      }
 
      100% {
-         transform: rotate(360deg);
+
+         transform: rotate(-360deg);
      }
  }
-
-
 
  
 
- .scrolledProyect {
+ .scrolled {
      position: absolute;
      z-index: -2;
  margin-top: 4rem;
-    width: 350px;
+    width: 190px;
      height: 4px;
     background-color: rgb(221, 22, 22);
-     box-shadow: -5px -62px 100px 60px rgb(214, 9, 9);
+     box-shadow: -5px -42px 90px 40px rgb(214, 9, 9);
      transform-origin: center;
      border-radius: 10%;
-    transition: all 3s ease ;  
-     animation: reduceDivProyect 3s ease; 
+    transition: all 2s ease ;  
+     animation: reduceDiv  3s   ease; 
  }
 
-@keyframes reduceDivProyect {
+@keyframes reduceDiv {
      0% {
-     width: 140px;
-     height: 140px;
+     width: 70px;
+     height: 70px;
      }
  25% {
-     width: 80px;
-     height: 80px;
+     width: 30px;
+     height: 30px;
      }
   
      100% {
-     width: 350px;
+     width: 190px;
      height: 4px;
      }
  }
@@ -59,14 +57,7 @@
 
 
 
-
-
-
-
-
-
-
-  .scrolledProyecth1 {
+  .scrolledh1 {
      font-size: 4rem;
      position: absolute;
      z-index: -1;
@@ -77,7 +68,7 @@
 
  }
 
- .scrolledProyecth3 {
+ .scrolledh3 {
      font-size: 2.2rem;
      z-index: 1;
      color: rgba(0, 0, 0, 0);
@@ -86,7 +77,8 @@
  }
 
 
- .backgroungImgWork {
+
+ .backgroungImgSkill {
 
      width: 100%;
      height: 40vh;
@@ -96,20 +88,36 @@
      align-items: center;
  }
 
- .romRotateSkillhProyect1 {
-     font-size: 4rem;
+.romRotateSkillh1{
+   font-size: 4rem;
      position: absolute;
      z-index: -1;
      color: rgba(255, 255, 255, 0.242);
 
+}
 
-
- }
-
- .romRotateSkillhProyecth3 {
-     font-size: 2.2rem;
+.romRotateSkillh3{
+   font-size: 2.2rem;
      z-index: 1;
      color: rgb(0, 0, 0);
+        transition: all 2s ease;
+}
 
- }
- 
+
+.skillsCard{
+    width:9rem;
+    margin-left: 2rem;
+}
+.skillsImages {
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .skillsCard{
+    width:4rem;
+}
+  
+
+}

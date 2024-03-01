@@ -4,7 +4,7 @@ import PortFol from './pages/Portfol/Portfol'
 import WorkGalleryPage from './pages/Work/WorkGalleryPage/WorkGalleryPage'
 import Footer from './pages/Footer/Footer'
 import AppRoutes from './routes/AppRoutes'
-
+import SkillPage from './pages/Skill/SkillPage'
 
 
 
@@ -17,6 +17,7 @@ function App() {
 
       <PortFol />
       <WorkGalleryPage />
+      <SkillPage />
       <AppRoutes />
       <UserMessage />
       <Footer />
