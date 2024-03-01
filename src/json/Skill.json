@@ -10,6 +10,11 @@
         "logoImage": "CSS3.svg"
     },
     {
+        "id": "S2",
+        "name": "JAVASCRIPT",
+        "logoImage": "JAVASCRIPT.svg"
+    },
+    {
         "id": "S4",
         "name": "REACT",
         "logoImage": "REACT.svg"

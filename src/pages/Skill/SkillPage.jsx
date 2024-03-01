@@ -38,13 +38,13 @@ const SkillPage = () => {
         <>
             <div className='backgroungImgSkill'>
                 <div className={` ${!isScrolledMobileSkill ? 'romRotateSkill' : 'scrolled'}`} ></div>
-                <h1 className={` ${!isScrolledMobileSkill ? 'romRotateSkillh1' : 'scrolledh1'}`}  >SKILL</h1>
-                <h3 className={` ${!isScrolledMobileSkill ? 'romRotateSkillh3' : 'scrolledh3'}`} >SKILL</h3>
+                <h1 className={` ${!isScrolledMobileSkill ? 'romRotateSkillh1' : 'scrolledh1'}`}>TECNOLOGIAS</h1>
+                <h3 className={` ${!isScrolledMobileSkill ? 'romRotateSkillh3' : 'scrolledh3'}`} >TECNOLOGIAS</h3>
             </div>
             <div className='backgroungImgSkillLapto '>
-                <div className={` ${!isScrolledLaptopSkill ? 'romRotateProyect' : 'scrolledProyect'}`} ></div>
-                <h1 className={` ${!isScrolledLaptopSkill ? 'romRotateSkillhProyect1' : 'scrolledProyecth1'}`}  >SKILL</h1>
-                <h3 className={` ${!isScrolledLaptopSkill ? 'romRotateSkillProyecth3' : 'scrolledProyecth3'}`} >SKILL</h3>
+                <div className={` ${!isScrolledLaptopSkill ? 'romRotateProyect' : 'scrolled'}`} ></div>
+                <h1 className={` ${!isScrolledLaptopSkill ? 'romRotateSkillhProyect1' : 'scrolledh1'}`}  >TECNOLOGIAS</h1>
+                <h3 className={` ${!isScrolledLaptopSkill ? 'romRotateSkillProyecth3' : 'scrolledh3'}`} >TECNOLOGIAS</h3>
             </div>
             {/* //aqui van los svg */}
 

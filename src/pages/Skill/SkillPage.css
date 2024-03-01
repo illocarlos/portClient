@@ -2,8 +2,8 @@
  .romRotateSkill {
      position: absolute;
      z-index: -2;
-     width: 90px;
-     height: 90px;
+     width: 200px;
+     height: 200px;
      background-color: rgb(221, 22, 22);
      box-shadow: -5px 5px 90px 9px rgb(214, 9, 9);
      transform-origin: center;
@@ -28,27 +28,28 @@
      position: absolute;
      z-index: -2;
  margin-top: 4rem;
-    width: 190px;
+    width: 350px;
      height: 4px;
     background-color: rgb(221, 22, 22);
      box-shadow: -5px -42px 90px 40px rgb(214, 9, 9);
      transform-origin: center;
      border-radius: 10%;
-     animation: reduceDiv  3s   ease; 
+
+     animation: reduceDiv  2s   ease; 
  }
 
 @keyframes reduceDiv {
      0% {
-     width: 70px;
-     height: 70px;
+     width: 140px;
+     height: 200px;
      }
- 25% {
-     width: 30px;
-     height: 30px;
+   50% {
+     width: 3px;
+     height: 200px;
      }
   
      100% {
-     width: 190px;
+     width: 350px;
      height: 4px;
      }
  }
@@ -57,7 +58,7 @@
 
 
   .scrolledh1 {
-     font-size: 4rem;
+     font-size: 3rem;
      position: absolute;
      z-index: -1;
      color: rgb(255, 255, 255);
@@ -68,7 +69,7 @@
  }
 
  .scrolledh3 {
-     font-size: 2.2rem;
+     font-size: 1.2rem;
      z-index: 1;
      color: rgba(0, 0, 0, 0);
         transition: all 2s ease;
@@ -77,7 +78,8 @@
 
 
 
- .backgroungImgSkill, .backgroungImgSkillLapto{
+ .backgroungImgSkill, 
+ .backgroungImgSkillLapto{
 
      width: 100%;
      height: 40vh;
@@ -88,7 +90,7 @@
  }
 
 .romRotateSkillh1{
-   font-size: 4rem;
+   font-size: 3rem;
      position: absolute;
      z-index: -1;
      color: rgba(255, 255, 255, 0.242);
@@ -117,6 +119,7 @@
 
 @media (max-width: 607px)  {
 
+
     .backgroungImgSkillLapto {
 display: none;
 
@@ -126,6 +129,7 @@ display: none;
 
 @media (min-width: 607px)  {
 
+    
     .backgroungImgSkill {
 display: none;
 
@@ -133,7 +137,9 @@ display: none;
 }
  
 
-@media (min-width: 300px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 600px) {
+
+
     .skillsCard{
     width:5rem;
 }

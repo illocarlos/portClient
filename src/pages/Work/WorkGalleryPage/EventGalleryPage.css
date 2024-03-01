@@ -36,7 +36,7 @@
      box-shadow: -5px -62px 100px 60px rgb(214, 9, 9);
      transform-origin: center;
      border-radius: 10%;
-     animation: reduceDivProyect 3s ease; 
+     animation: reduceDivProyect 2s ease; 
  }
 
 @keyframes reduceDivProyect {
@@ -44,9 +44,9 @@
      width: 140px;
      height: 140px;
      }
- 25% {
-     width: 80px;
-     height: 80px;
+ 50% {
+     width: 3px;
+     height: 190px;
      }
   
      100% {
