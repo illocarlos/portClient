@@ -27,6 +27,7 @@ const WorkGalleryPage = () => {
       })
   }
 
+
   return (
     <>
       <div className='backgroungImg'>

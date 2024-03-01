@@ -4,6 +4,10 @@ import './WorkCardList.css'
 
 
 const WorkList = ({ title, description, workImage, link, _id, gitHub }) => {
+
+
+
+
     return (
         <div className="work-card" key={_id}>
             <div className="work-content">

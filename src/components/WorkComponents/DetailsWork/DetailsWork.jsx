@@ -3,13 +3,11 @@ import './DetailsWork.css'
 import { Row, Col, Container } from "react-bootstrap"
 import { useEffect, useState } from 'react'
 import workService from '../../../service/work.service'
-
 const DetailsWork = () => {
 
 
     const { work_id } = useParams()
     const [work, setWork] = useState({})
-
 
     useEffect(() => {
         loadWorkDetails()
@@ -20,9 +18,18 @@ const DetailsWork = () => {
         workService
 
             .getWorkDetails(work_id)
-            .then(({ data }) => setWork(data))
+            .then(({ data }) => {
+                const description = data.description.split(" ")
+                setWork({
+                    ...data,
+                    icon: [...description]
+                })
+            })
             .catch(err => console.log(err))
+
     }
+
+
 
 
 
@@ -35,29 +42,45 @@ const DetailsWork = () => {
                         <Container>
                             <div className='div-article'>
                                 <h1 className='hDetails'>{work.title}</h1>
-                                <article className='mt-5'> {work.description}</article>
+                                {/* <article className='mt-5'> {work.description}</article> */}
+
+
+
+
+                                {/* <div className="iconOrder"> */}
+                                <Row>
+                                    {work.icon && work.icon.map((icon, index) => (
+                                        <Col key={index} sm={12} md={3} lg={4} className="iconOrder mt-lg-4">
+
+                                            <img src={`/assets/${icon}.svg`} />
+
+                                        </Col>
+                                    ))}
+                                    {/* </div> */}
+
+                                </Row>
                             </div>
                         </Container>
                         <div className='div-Link'>
-                            <Link class="custom-button ml-2" to={work.link}>web</Link>
-                            <Link class="custom-button ml-2" to={work.gitHub}>gitHub </Link>ç
-                            <Link class="custom-button ml-2" to={"/"}>volver</Link>
+                            <Link className="custom-button ml-2" to={work.link}>web</Link>
+                            <Link className="custom-button ml-2" to={work.gitHub}>gitHub</Link>
+                            <Link className="custom-button ml-2" to={"/"}>volver</Link>
                         </div>
                     </div>
 
-                </Col>
+                </Col >
                 <Col sm={12} md={6} lg={6} className="order-sm-1 ">
-                    <div className='imgId'>
-                        <img className='work-image' src={work.workImage} alt="" />
+                    <div>
+                        <img className='work-image' src={work.workImage} alt={`image of proyect${work.title}`} />
 
                     </div>
                 </Col>
 
-            </Row>
+            </Row >
 
 
 
-        </div>
+        </div >
     )
 
 }
