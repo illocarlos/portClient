@@ -9,19 +9,17 @@ const WorkList = ({ title, description, workImage, link, _id, gitHub }) => {
 
 
     return (
-        <div className="work-card" key={_id}>
-            <div className="work-content">
+        <div className="work-content" key={_id}>
 
-                <Link to={`/work/${_id}`}>
-                    <div
-                        className="work-avatar"
-                        style={{ backgroundImage: `url(${workImage})` }}>
+            <Link to={`/work/${_id}`}>
+                <div
+                    className="work-avatar"
+                    style={{ backgroundImage: `url(${workImage})` }}>
 
-                        <h1 className="work-name ">{title}</h1>
-                    </div>
-                </Link>
-            </div>
-        </div >
+                    <h1 className="work-name ">{title}</h1>
+                </div>
+            </Link>
+        </div>
     )
 
 }

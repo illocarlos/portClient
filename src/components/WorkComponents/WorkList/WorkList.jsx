@@ -7,10 +7,10 @@ const WorkList = ({ works }) => {
 
 
     return (
-        <Row>
+        <Row className=' d-flex align-items-center justify-content-center'>
             {works.map((elm) => (
-                <Col key={elm._id} sm={12} md={6} lg={4}>
-                    <div className="work-card">
+                <Col className='mt-1' key={elm._id} sm={12} md={6} lg={4}>
+                    <div className="work-card ">
                         <WorkCardList {...elm} />
                     </div>
                 </Col>
