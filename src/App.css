@@ -1,3 +1,9 @@
+
+html {
+    cursor: none }
+*:hover{
+  cursor: none;
+}
 body {
     background-color: black;
     background-size: cover;
@@ -8,6 +14,7 @@ body {
     padding: 0;
     position: relative;
     font-family: Heebo, sans-serif;
+     cursor: none 
 }
 
 h1 {
@@ -44,6 +51,7 @@ h1 {
   transition: all 0.001s ease-in-out; /* Ajustar la duración de la transición */
   opacity: 1;
   transform: scale(1) translate(0);
+   transition: 0.5s ease;
 }
 
 /* Efecto al hacer clic */
@@ -58,9 +66,22 @@ h1 {
 
 /* Efecto al pasar el cursor sobre enlaces y botones */
 .is-hover .c-cursor__inner {
-  background-color: rgba(0, 0, 255, 0.5); /* Cambiar color de fondo al pasar el cursor */
-  border-color: rgba(0, 0, 255, 0.8); /* Cambiar color del borde al pasar el cursor */
+  width:170% ;
+  height:170% ;
+  background-color: rgba(0, 0, 0, 0.533);
+  border: solid white;
+  transition: 0.5s ease;
 }
-html, body {
-  cursor: none ;
+
+
+@media (max-width: 807px) {
+ .c-cursor__inner,
+ .c-cursor,
+ .is-hover,
+  .c-cursor__inner,
+   .is-clicked,
+    .c-cursor__inner {
+  display: none;
+background-color: transparent;
+ }
 }

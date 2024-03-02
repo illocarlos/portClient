@@ -53,62 +53,153 @@
 }
 
 
-.dropdown-menu.centered {
-    background-color: rgba(0, 0, 0, 0.828);
+.DivMenu{
+position: fixed;
+top: 0;
+  left: 100%;
+width: 60vw;
+height: 110vh;
+background-color: rgb(255, 0, 0);
+}
+.list-menu-dropdown{
+    text-align: end;
+margin: 50% 25%;
+}
+
+.transformLink{
+    
+     color: inherit;
+}
+.showMenu{
+animation: showModalMobile 2s ease forwards;
+}
+
+@keyframes showModalMobile {
+     0% {
+         left: 100%;
+   
+     }
+ 
+  
+     100% {
+         left: 50%;
+     }
+ }
+
+.hiddenMenu{
+ 
+animation: hiddenModalMobile 2s ease forwards;
+}
+@keyframes hiddenModalMobile {
+     0% {
+         left: 50%;
+     }
+ 
+  
+     100% {
+         left: 100%;
+ 
+     }
+ }
+
+.DivMenuBlack{
+position: fixed;
+top: 0;
+  left: 100%;
+width: 100vw;
+height: 110vh;
+background-color: rgba(0, 0, 0, 0.396);
+}
+
+.showMenuComplete{
+animation: showModalComplete 2s ease forwards;
+}
+
+@keyframes showModalComplete {
+     0% {
+         left: 100%;
+   
+     }
+    20% {
+         left: 100%;
+   
+     }
+    40% {
+         left: 100%;
+   
+     }
+    60% {
+         left: 100%;
+   
+     }
+ 
+  
+     100% {
+         left: 0;
+     }
+ }
+
+.hiddenMenuComplete{
+ 
+animation: hiddenModalComplete 1s ease forwards;
+}
+@keyframes hiddenModalComplete {
+     0% {
+         left: 0;
+     }
+ 
+  
+     100% {
+         left: 100%;
+ 
+     }
+ }
+ .buttonShowMenu{
+    background-color: red;
+    border-radius: 50%;
+position: absolute;
+right: 1rem;
+top: 1rem;
+width: 2.5rem;
+height: 2.5rem;
+gap: .35rem;
+border: 0;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
-    transform: scaleX(0);
-    left: -60px;
-    transform-origin: top right;
-    transition: transform 0.5s ease-in-out;
+    justify-content: center;
+    align-items: center;
 }
 
-.dropdown-toggle-icon {
-    border: 1px solid red;
-    background-color: transparent;
-    border-radius: 40%;
-    transform: scaleX(-1);
-    width: 60px;
-    height: 60px;
-    background-image: url('../../../public/akat.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-     
 
+.buttonShowMenu  div {
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s;
+    transform-origin: left;
 }
+
+.rotateFirstDiv{
+transform: rotate( 45deg);
+}
+.rotateSecondDiv{
+opacity: 0;
+}
+.rotateThirdDiv{
+transform: rotate( -45deg);
+}
+
 
 @media (min-width: 600px) {
-    .dropdown-toggle-icon {
+    /* desaparece el menu si es pc */
+    .Hidden{
         display: none;
 
     }
+   
 }
 
 
 
-
-.dropdown-menu.show.centered {
-
-    transform: scaleX(1.5);
-}
-
-.dropdown-toggle-icon {
-    transform: scaleX(-1);
-    position: relative;
-    left: 90%;
-    animation: slideImage-mb 2s ease-in-out forwards;
-}
-
-@keyframes slideImage-mb {
-    0% {
-        left: +230%;
-
-    }
-
-    100% {
-        left: -80px;
-    }
-
-}

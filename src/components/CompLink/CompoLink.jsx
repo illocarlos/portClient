@@ -1,69 +1,59 @@
 import { Link } from 'react-router-dom'
 import './CompoLink.css'
-import { Dropdown, Button, Modal } from 'react-bootstrap'
-import { useState } from 'react'
+import { Modal } from 'react-bootstrap'
+import { useEffect, useState } from 'react'
 import Contact from '../Contact/Contact'
 
 
 const CompoLink = () => {
 
     const [showModal, setShowModal] = useState(false)
+    const [isShowDropdowm, setiIsShowDropdowm] = useState(null)
 
+    const toggleModal = () => {
+        const showModal = !isShowDropdowm;
+        setiIsShowDropdowm(showModal);
+    }
+
+    useEffect(() => {
+
+    }, []);
 
     return (
         <>
 
-            <Dropdown >
-                <Dropdown.Toggle className='dropdown-toggle-icon d-md-none ' variant='danger'>
 
-                </Dropdown.Toggle>
+            <button className='buttonShowMenu Hidden' onClick={toggleModal}>
+                <div className={isShowDropdowm === null ? '' : isShowDropdowm ? 'rotateFirstDiv' : ''}></div>
+                <div className={isShowDropdowm === null ? '' : isShowDropdowm ? 'rotateSecondDiv' : ''}></div>
+                <div className={isShowDropdowm === null ? '' : isShowDropdowm ? 'rotateThirdDiv' : ''}></div>
+            </button>
+            <div className={`DivMenuBlack ${isShowDropdowm === null ? '' : isShowDropdowm ? 'showMenuComplete' : 'hiddenMenuComplete Hidden'}`}>
+                <div className={`DivMenu ${isShowDropdowm === null ? '' : isShowDropdowm ? 'showMenu' : ' Hidden hiddenMenu'}`}>
+                    <div className='list-menu-dropdown'>
 
-                <Dropdown.Menu
-                    style={{ height: 'auto' }}
-                    align="end" className="centered extend-left slide-up scrollable">
-                    <Dropdown.Item href="#action/3.1" className='d-flex justify-content-center' >
-                        <Link className=' ml-3 Link-button-cv-dropdown button-CV'
-                            to={'https://drive.google.com/file/d/1N6UJEGMv43T9To9OEnUhuIEsgMQNUAIc/view?usp=sharing'}
-                            target="_blank" >
-
-                            <p className='but-cv-p'> CV</p>
-                        </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#action/3.2" >
-                        <Link className='linkGit'
+                        <Link
+                            className='transformLink'
                             target="_blank" to={"https://www.github.com/illocarlos"}
                             title='go to Git Hub'>
-                            <div className='ml-3 mt-2  imageContainer'>
-
-                                <img style={{ width: '40px', height: '47px' }} className='Git' src={"/git.png"} alt="Git" />
-                            </div>
+                            <p>Github</p>
                         </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item href="#action/3.3">
-                        <Link className='linklinked'
+                        <Link
+                            className='transformLink'
                             to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"}
                             target="_blank" title='go to  linkedln'>
-                            <div className='ml-3 mt-2 imageContainer'>
-                                <img style={{ width: '40px', height: '50px' }} className='linked' src={"/linked.png"} alt="Linked" />
-                            </div>
+                            <p>Linkedin</p>
                         </Link>
-                    </Dropdown.Item>
-
-                    <Dropdown.Item href="#action/3.4">
-                        <Button to={'/Contact'}
+                        <Link
+                            className='transformLink'
+                            to={'/Contact'}
                             onClick={() => setShowModal(true)}
-                            className=" ml-1 mt-2 ButtonEmail"
                             type="submit" title='send mail'>
-                            <img style={{ width: '40px', height: '50px' }} className='openButton' src={'/close.png'} alt="mail" />
-                            <img style={{ width: '40px', height: '50px' }} className='closeButton' src={"/open.png"} alt="mail" />
-
-
-                        </Button>
-                    </Dropdown.Item>
-
-                </Dropdown.Menu>
-            </Dropdown>
-
+                            <p>Contactar</p>
+                        </Link>
+                    </div>
+                </div>
+            </div >
 
 
             <Link className='button-CV  mr-3 d-none d-sm-inline'
@@ -91,7 +81,7 @@ const CompoLink = () => {
 
             <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header className='Contact'>
-                    <Modal.Title>Contact me</Modal.Title>
+                    <Modal.Title>Contacta</Modal.Title>
                     <button className="custom-close-button" onClick={() => setShowModal(false)}>
                         X
                     </button>
