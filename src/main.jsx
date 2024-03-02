@@ -20,8 +20,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <AuthProviderWrapper>
           <Index />
           <App >
-
-
           </App>
         </AuthProviderWrapper>
       </Router>
