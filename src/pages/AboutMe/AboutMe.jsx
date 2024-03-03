@@ -1,6 +1,6 @@
 import './AboutMe.css'
 import { Container, Row, Col } from 'react-bootstrap'
-import { me } from '../../../public/me.jpg'
+import me from '../../../public/me.jpg'
 
 
 const AboutMe = () => {
