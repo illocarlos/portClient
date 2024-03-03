@@ -16,7 +16,6 @@
 .linkGit:hover .Git,
 .linklinked:hover .linked,
 .button-CV:hover {
-     cursor: none;
     transform: scale(1.2);
 }
 

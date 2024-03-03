@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import UserMessage from '../src/components/UserMessage/UserMessage';
 import PortFol from './pages/Portfol/Portfol';
@@ -13,40 +13,40 @@ function App() {
     const isClickedClass = 'is-clicked';
     const isHiddenClass = 'is-hidden';
 
-    if (cursoEL) {
-      const onMouseMove = (e) => {
-        cursoEL.style.setProperty('--cursor-x', `${e.clientX}px`);
-        cursoEL.style.setProperty('--cursor-y', `${e.clientY}px`);
-      };
+    const onMouseMove = (e) => {
+      cursoEL.style.setProperty('--cursor-x', `${e.clientX}px`);
+      cursoEL.style.setProperty('--cursor-y', `${e.clientY}px`);
+    };
 
-      const onMouseDown = () => {
-        cursoEL.classList.add(isClickedClass);
-      };
+    const onMouseDown = () => {
+      cursoEL.classList.add(isClickedClass);
+    };
 
-      const onMouseUp = () => {
-        cursoEL.classList.remove(isClickedClass);
-      };
+    const onMouseUp = () => {
+      cursoEL.classList.remove(isClickedClass);
+    };
 
-      const onMouseEnter = () => {
-        cursoEL.classList.remove(isHiddenClass);
-      };
+    const onMouseEnter = () => {
+      cursoEL.classList.remove(isHiddenClass);
+    };
 
-      const onMouseLeave = () => {
-        cursoEL.classList.add(isHiddenClass);
-      };
+    const onMouseLeave = () => {
+      cursoEL.classList.add(isHiddenClass);
+    };
 
-      const handleLinkHoverEvents = () => {
-        const linksAndButtons = document.querySelectorAll('a, button,img,Link,link ,.js-link, input[type="button"], input[type="submit"]');
-        linksAndButtons.forEach((el) => {
-          el.addEventListener("mouseenter", () => {
-            cursoEL.classList.add('is-hover');
-          });
-          el.addEventListener("mouseleave", () => {
-            cursoEL.classList.remove('is-hover');
-          });
+    const handleLinkHoverEvents = () => {
+      const linksAndButtons = document.querySelectorAll('button, img, Link, link, a, .button-send, .work-content');
+      linksAndButtons.forEach((el) => {
+        el.addEventListener("mouseenter", () => {
+          cursoEL.classList.add('is-hover');
         });
-      };
+        el.addEventListener("mouseleave", () => {
+          cursoEL.classList.remove('is-hover');
+        });
+      });
+    };
 
+    const timeout = setTimeout(() => {
       document.addEventListener('mousemove', onMouseMove);
       document.addEventListener('mousedown', onMouseDown);
       document.addEventListener('mouseup', onMouseUp);
@@ -62,15 +62,9 @@ function App() {
       });
 
       handleLinkHoverEvents();
+    }, 1000); // Aquí puedes ajustar el tiempo de espera según tus necesidades
 
-      return () => {
-        document.removeEventListener('mousemove', onMouseMove);
-        document.removeEventListener('mousedown', onMouseDown);
-        document.removeEventListener('mouseup', onMouseUp);
-        cursoEL.removeEventListener('mouseenter', onMouseEnter);
-        cursoEL.removeEventListener('mouseleave', onMouseLeave);
-      };
-    }
+    return () => clearTimeout(timeout);
   }, []);
 
   return (

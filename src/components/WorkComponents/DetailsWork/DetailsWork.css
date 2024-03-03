@@ -60,7 +60,7 @@ article {
     color: white;
     text-decoration: none;
     transition: background-position 0.8s, transform 0.6s, box-shadow 0.6s;
-    cursor: pointer;
+    cursor: none !important;
     background-size: 200% 200%;
     background-position: 0% 0%;
 }

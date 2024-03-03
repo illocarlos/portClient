@@ -15,13 +15,15 @@
 
 .logoContainer {
     display: flex;
-
     flex-flow: row nowrap;
 }
 
 .ButtonEmail {
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
+    background-color: rgba(255, 255, 255, 0) !important;
+   
+}
+.collapse{
+    border: none !important;
 }
 
 .logoP {
@@ -84,6 +86,7 @@
 .openButton,
 .closeButton {
     display: block;
+    border: none !important;
 }
 
 .openButton {
@@ -93,21 +96,19 @@
 
 }
 
-.ButtonEmail:hover {
-    background-color: transparent;
-}
 
-.ButtonEmail::after {
-    outline: none;
-}
 
 
 .ButtonEmail:hover .closeButton {
     display: none;
+     border: none !important;
+
 }
 
 .ButtonEmail:hover .openButton {
     display: block;
+     border: none !important;
+    
 }
 
 .custom-close-button {
@@ -115,11 +116,12 @@
     border: none;
     font-size: 24px;
     color: red;
-    cursor: pointer;
+     border: none !important;
 }
 
 .custom-close-button:focus {
     outline: none;
+     border: none !important;
 }
 
 .Contact {
@@ -137,13 +139,19 @@
     border-radius: 20px;
 }
 
+.btn{
+    border: none !important;
+}
 .navDireccion {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     z-index: 2;
+    border: none !important;
 }
-
+.collapse{
+    border: none !important;
+}
 .navIcon {
 
     display: flex;
@@ -159,3 +167,4 @@
     }
 
 }
+

@@ -46,7 +46,7 @@ const CompoLink = () => {
                         </Link>
                         <Link
                             className='transformLink'
-                            to={'/Contact'}
+                            // to={'/Contact'}
                             onClick={() => setShowModal(true)}
                             type="submit" title='send mail'>
                             <p>Contactar</p>
@@ -81,7 +81,7 @@ const CompoLink = () => {
 
             <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header className='Contact'>
-                    <Modal.Title>Contacta</Modal.Title>
+                    <Modal.Title>Contactar</Modal.Title>
                     <button className="custom-close-button" onClick={() => setShowModal(false)}>
                         X
                     </button>

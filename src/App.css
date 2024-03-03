@@ -2,7 +2,7 @@
 html {
     cursor: none }
 *:hover{
-  cursor: none;
+  cursor: none !important;
 }
 body {
     background-color: black;
@@ -71,6 +71,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.533);
   border: solid white;
   transition: 0.5s ease;
+
 }
 
 

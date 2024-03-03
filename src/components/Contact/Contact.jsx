@@ -57,7 +57,7 @@ const Contact = ({ setShowModal }) => {
                 </Form.Group>
 
 
-                <Button className="button-send" type="submit">ENVIAR</Button>
+                <Button className="button-send" type="submit"> ENVIAR</Button>
 
             </Form>
         </div>

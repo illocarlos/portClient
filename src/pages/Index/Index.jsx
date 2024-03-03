@@ -60,7 +60,7 @@ const Index = () => {
                             </Link>
                             <div className='navIcon'>
                                 <CompoLink />
-                                <Navbar.Collapse >
+                                <Navbar.Collapse  >
 
                                     <Button to={'/Contact'}
                                         onClick={() => setShowModal(true)}
@@ -84,7 +84,7 @@ const Index = () => {
                             <Modal.Header className='Contact' >
 
                                 <Modal.Title>Contactar</Modal.Title>
-                                <button className="custom-close-button" onClick={() => setShowModal(false)}>
+                                <button to={'/'} className="custom-close-button" onClick={() => setShowModal(false)}>
                                     X
                                 </button>
                             </Modal.Header>

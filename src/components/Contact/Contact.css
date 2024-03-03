@@ -3,4 +3,12 @@
     border: none;
     background-color: red;
     width: 100%;
+    transition: 1s ease;
+   cursor: none;
+    color: black;
+}
+
+.button-send:hover{
+    cursor: none !important;
+background-color: black;
 }
