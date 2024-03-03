@@ -37,8 +37,8 @@ const WorkList = ({ works }) => {
 
     return (
         <>
-            {/* aqui esta el error de responsive */}
-            <Row >
+            <Row className=' d-flex  justify-content-center'>
+
                 {works.map((elm, index) => (
                     <Col className='mt-1' key={elm._id} sm={11} md={6} lg={4}>
                         <motion.div
