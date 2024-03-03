@@ -160,9 +160,9 @@ animation: hiddenModalComplete 1s ease forwards;
 position: absolute;
 right: 1rem;
 top: 1rem;
-width: 2.5rem;
-height: 2.5rem;
-gap: .35rem;
+width: 3.2rem;
+height: 3rem;
+gap: .65rem;
 border: 0;
     z-index: 1000;
     display: flex;
@@ -182,13 +182,13 @@ border: 0;
 }
 
 .rotateFirstDiv{
-transform: rotate( 45deg);
+transform: rotate( 47deg);
 }
 .rotateSecondDiv{
 opacity: 0;
 }
 .rotateThirdDiv{
-transform: rotate( -45deg);
+transform: rotate( -47deg);
 }
 
 
