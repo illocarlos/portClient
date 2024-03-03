@@ -62,7 +62,7 @@ background-color: rgb(255, 0, 0);
 }
 .list-menu-dropdown{
     text-align: end;
-margin: 50% 25%;
+margin: 50% 30%;
 }
 
 .transformLink{
@@ -81,17 +81,21 @@ animation: showModalMobile 2s ease forwards;
  
   
      100% {
-         left: 50%;
+         left: 55%;
      }
  }
 
+
+
+ /* animacion para replegar el menu de mobile */
 .hiddenMenu{
  
 animation: hiddenModalMobile 2s ease forwards;
 }
+
 @keyframes hiddenModalMobile {
-     0% {
-         left: 50%;
+     0% {  
+          left: 55%;
      }
  
   
@@ -100,6 +104,8 @@ animation: hiddenModalMobile 2s ease forwards;
  
      }
  }
+
+ /* animacion para plegar el fondo del menu que es negro */
 
 .DivMenuBlack{
 position: fixed;
@@ -138,6 +144,9 @@ animation: showModalComplete 2s ease forwards;
      }
  }
 
+
+
+ /* animacion para ocultar el fondo del menu */
 .hiddenMenuComplete{
  
 animation: hiddenModalComplete 1s ease forwards;
@@ -153,6 +162,10 @@ animation: hiddenModalComplete 1s ease forwards;
  
      }
  }
+
+
+
+ /* boton para abrir el menu */
  .buttonShowMenu{
     background-color: red;
     border-radius: 50%;
@@ -179,6 +192,8 @@ border: 0;
     transition: all 0.5s;
 
 }
+
+/* aniomacion para el buton que abre el menu */
 
 .rotateFirstDiv{
 transform: rotate( -28deg);

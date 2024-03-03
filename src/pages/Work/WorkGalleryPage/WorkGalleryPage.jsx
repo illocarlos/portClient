@@ -18,9 +18,11 @@ const WorkGalleryPage = () => {
       let scrollPositionWork = window.scrollY
       let scrollPositionWorklapto = window.scrollY
       // Determinar si es un dispositivo móvil o portátil basado en el scroll
-      if (scrollPositionWork > 2500) {
+
+      if (scrollPositionWork > 3200) {      // este activa la animacion del titulo version mobile
+
         setIsScrolledMobile(false)
-      } else if (scrollPositionWorklapto < 1200) {
+      } else if (scrollPositionWorklapto < 1500) { // este activa la animacion del titulo version laptor
         setIsScrolledLaptop(true)
       } else {
 
