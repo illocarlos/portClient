@@ -37,9 +37,10 @@ const WorkList = ({ works }) => {
 
     return (
         <>
-            <Row className='hoverCursor d-flex align-items-center justify-content-center'>
+            {/* aqui esta el error de responsive */}
+            <Row >
                 {works.map((elm, index) => (
-                    <Col className='mt-1' key={elm._id} sm={12} md={6} lg={4}>
+                    <Col className='mt-1' key={elm._id} sm={11} md={6} lg={4}>
                         <motion.div
                             id={`work-${index}`}
                             initial={{ opacity: 0, y: 20 }}

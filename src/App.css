@@ -1,8 +1,14 @@
 
+/* eliminamos el cursor prewdefinido para crear uno personalizado  y lo globalizamos  */
 html {
     cursor: none }
 *:hover{
   cursor: none !important;
+}
+/* para marcar en todo los ROW de bootstrap que no tengan margenes por que en el resposive me da scroll */
+.row{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 body {
     background-color: black;
@@ -86,3 +92,5 @@ h1 {
 background-color: transparent;
  }
 }
+
+

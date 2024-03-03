@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 import UserMessage from '../src/components/UserMessage/UserMessage';
 import PortFol from './pages/Portfol/Portfol';

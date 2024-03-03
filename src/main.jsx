@@ -19,8 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Router>
         <AuthProviderWrapper>
           <Index />
-          <App >
-          </App>
+          <App />
         </AuthProviderWrapper>
       </Router>
     </React.StrictMode>
