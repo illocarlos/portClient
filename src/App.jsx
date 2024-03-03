@@ -35,7 +35,7 @@ function App() {
     };
 
     const handleLinkHoverEvents = () => {
-      const linksAndButtons = document.querySelectorAll('button, img, Link, link, a, .button-send, .work-content');
+      const linksAndButtons = document.querySelectorAll('button, img , Link, link, a, .button-send, .work-content');
       linksAndButtons.forEach((el) => {
         el.addEventListener("mouseenter", () => {
           cursoEL.classList.add('is-hover');
