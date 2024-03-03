@@ -13,12 +13,13 @@ const SkillPage = () => {
 
     useMotionValueEvent(scrollY, "change", (latest) => {
 
-        if (latest > 700) {
+        // cuando aparece en version mobile y lapot los logos de skill
+        if (latest > 750) {
             setIsShowItemMobile(true)
         } else {
             setIsShowItemMobile(false)
         }
-        if (latest > 1200) {
+        if (latest > 1800) {
             setIsShowItem(true)
         } else {
             setIsShowItem(false)
@@ -26,14 +27,18 @@ const SkillPage = () => {
         }
     })
 
+    // este useefect lo usamos para crear animacion al titulo de TECNOLOGIAS que cuando haga scroll haga la animacion
     useEffect(() => {
+
         const handleScrollSkill = () => {
             let scrollPosition = window.scrollY;
             let scrollPositionLaptop = window.scrollY;
 
-            if (scrollPosition > 1550) {
+
+            if (scrollPosition > 1600) {// animacion para el titulo version mobile
                 setIsScrolledMobileSkill(true);
-            } else if (scrollPositionLaptop > 600) {
+
+            } else if (scrollPositionLaptop > 550) {// animacion para el titulo version laptor
                 setIsScrolledLaptopSkill(true);
             } else {
                 setIsScrolledLaptopSkill(false);
