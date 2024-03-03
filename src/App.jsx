@@ -53,32 +53,40 @@ function App() {
       });
     };
 
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mousedown', onMouseDown);
+    document.addEventListener('mouseup', onMouseUp);
+    cursoEL.addEventListener('mouseenter', onMouseEnter);
+    cursoEL.addEventListener('mouseleave', onMouseLeave);
 
-    const timeout = setTimeout(() => {
-      document.addEventListener('mousemove', onMouseMove);
-      document.addEventListener('mousedown', onMouseDown);
-      document.addEventListener('mouseup', onMouseUp);
-      cursoEL.addEventListener('mouseenter', onMouseEnter);
-      cursoEL.addEventListener('mouseleave', onMouseLeave);
+    // Modificar el evento mouseleave del cuerpo del documento para quitar la clase is-hidden del cursor cuando el cursor vuelve a entrar
+    document.body.addEventListener('mouseleave', () => {
+      cursoEL.classList.add(isHiddenClass);
+    });
+    document.body.addEventListener('mouseenter', () => {
+      cursoEL.classList.remove(isHiddenClass);
+    });
 
-      // Modificar el evento mouseleave del cuerpo del documento para quitar la clase is-hidden del cursor cuando el cursor vuelve a entrar
-      document.body.addEventListener('mouseleave', () => {
+    handleLinkHoverEvents();
+
+    return () => {
+      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener('mousedown', onMouseDown);
+      document.removeEventListener('mouseup', onMouseUp);
+      cursoEL.removeEventListener('mouseenter', onMouseEnter);
+      cursoEL.removeEventListener('mouseleave', onMouseLeave);
+      document.body.removeEventListener('mouseleave', () => {
         cursoEL.classList.add(isHiddenClass);
       });
-      document.body.addEventListener('mouseenter', () => {
+      document.body.removeEventListener('mouseenter', () => {
         cursoEL.classList.remove(isHiddenClass);
       });
-
-      handleLinkHoverEvents();
-    }, 0); // Aquí puedes ajustar el tiempo de espera según tus necesidades
-
-    return () => clearTimeout(timeout);
+    };
   }, []);
 
   return (
     <div className='App'>
       <div className='c-cursor js-cursor'>
-
         <div className='c-cursor__inner'>
           <span className="c-cursor__text"></span> {/* Elemento para mostrar el texto 'Click' o el atributo "alt" */}
         </div>
