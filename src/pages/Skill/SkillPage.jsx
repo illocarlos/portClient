@@ -12,19 +12,17 @@ const SkillPage = () => {
     const { scrollY } = useScroll()
 
     useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log
-        if (latest < 1500) {
-            setIsShowItemMobile(false)
-        }
+
         if (latest > 1000) {
             setIsShowItemMobile(true)
+        } else {
+            setIsShowItemMobile(false)
         }
-
-        if (latest < 1900) {
-            setIsShowItem(false)
-        }
-        if (latest > 1400) {
+        if (latest > 1550) {
             setIsShowItem(true)
+        } else {
+            setIsShowItem(false)
+
         }
     })
 
