@@ -78,6 +78,7 @@ function App() {
   return (
     <div className='App'>
       <div className='c-cursor js-cursor'>
+
         <div className='c-cursor__inner'>
           <span className="c-cursor__text"></span> {/* Elemento para mostrar el texto 'Click' o el atributo "alt" */}
         </div>

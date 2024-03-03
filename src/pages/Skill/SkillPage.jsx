@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import './SkillPage.css';
 import skillsData from "../../json/Skill.json"
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
 const SkillPage = () => {
@@ -13,12 +13,12 @@ const SkillPage = () => {
 
     useMotionValueEvent(scrollY, "change", (latest) => {
 
-        if (latest > 1000) {
+        if (latest > 700) {
             setIsShowItemMobile(true)
         } else {
             setIsShowItemMobile(false)
         }
-        if (latest > 1550) {
+        if (latest > 1200) {
             setIsShowItem(true)
         } else {
             setIsShowItem(false)

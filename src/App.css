@@ -52,8 +52,8 @@ h1 {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 6px solid rgb(255, 0, 0);
   transition: all 0.001s ease-in-out; /* Ajustar la duración de la transición */
   opacity: 1;
   transform: scale(1) translate(0);
@@ -75,17 +75,48 @@ h1 {
 
 /* Efecto al pasar el cursor sobre enlaces y botones */
 .is-hover .c-cursor__inner {
-  width:370% ;
-  height:370% ;
+  width:390% ;
+  height:390% ;
   background-color: rgba(0, 0, 0, 0.533);
   color: white;
-  border: solid white;
   transition: 0.5s ease;
   display: flex;
+  font-size: 0.8rem;
   justify-content: center;
   align-items: center;
-
+border: 2px solid white;
+    animation:cursorAnimation 4s linear infinite;
 }
+@keyframes cursorAnimation {
+  0%{
+    border: 2px solid red;
+  }
+   20%{
+      border: 2px solid blue;
+  
+  }
+   40%{
+          border: 2px solid pink;
+  }
+   60%{
+          border: 2px solid orange;
+
+  }
+   80%{
+
+           border: 2px solid purple;
+
+
+  }
+
+    100%{
+          border: 2px solid pink;
+
+
+  }
+}
+
+
 
 
 @media (max-width: 807px) {
