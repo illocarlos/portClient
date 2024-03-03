@@ -70,7 +70,7 @@ function App() {
       });
 
       handleLinkHoverEvents();
-    }, 500); // Aquí puedes ajustar el tiempo de espera según tus necesidades
+    }, 400); // Aquí puedes ajustar el tiempo de espera según tus necesidades
 
     return () => clearTimeout(timeout);
   }, []);
