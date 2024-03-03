@@ -1,6 +1,6 @@
 import './AboutMe.css'
 import { Container, Row, Col } from 'react-bootstrap'
-
+import { me } from '../../../public/me.jpg'
 
 
 const AboutMe = () => {
@@ -43,7 +43,7 @@ const AboutMe = () => {
                             <Col sm={12} className='mt-4'>
 
                                 <div className='AritcleImg'>
-                                    <img src="../../../public/me.jpg" alt="" />
+                                    <img src={me} alt="" />
                                 </div>
 
                             </Col>
