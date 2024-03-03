@@ -62,7 +62,10 @@ h1 {
 
 /* Efecto al hacer clic */
 .is-clicked .c-cursor__inner {
-  opacity: 0.5;
+   width:60% ;
+  height:60% ;
+  background-color: rgb(253, 87, 87);
+  border: 3px solid black;
 }
 
 /* Efecto al ocultar el cursor */
@@ -72,11 +75,15 @@ h1 {
 
 /* Efecto al pasar el cursor sobre enlaces y botones */
 .is-hover .c-cursor__inner {
-  width:170% ;
-  height:170% ;
+  width:370% ;
+  height:370% ;
   background-color: rgba(0, 0, 0, 0.533);
+  color: white;
   border: solid white;
   transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 

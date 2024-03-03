@@ -35,16 +35,24 @@ function App() {
     };
 
     const handleLinkHoverEvents = () => {
-      const linksAndButtons = document.querySelectorAll('button, img , Link, link, a, .button-send, .work-content');
+      const linksAndButtons = document.querySelectorAll('button, img, Link, link, a, .button-send, .work-content');
       linksAndButtons.forEach((el) => {
         el.addEventListener("mouseenter", () => {
           cursoEL.classList.add('is-hover');
+          const altText = el.getAttribute('alt');
+          if (altText) {
+            cursoEL.querySelector('.c-cursor__text').textContent = altText;
+          } else {
+            cursoEL.querySelector('.c-cursor__text').textContent = 'Click';
+          }
         });
         el.addEventListener("mouseleave", () => {
           cursoEL.classList.remove('is-hover');
+          cursoEL.querySelector('.c-cursor__text').textContent = ''; // Limpia el texto
         });
       });
     };
+
 
     const timeout = setTimeout(() => {
       document.addEventListener('mousemove', onMouseMove);
@@ -70,7 +78,9 @@ function App() {
   return (
     <div className='App'>
       <div className='c-cursor js-cursor'>
-        <div className='c-cursor__inner'></div>
+        <div className='c-cursor__inner'>
+          <span className="c-cursor__text"></span> {/* Elemento para mostrar el texto 'Click' o el atributo "alt" */}
+        </div>
       </div>
       <PortFol />
       <SkillPage />
