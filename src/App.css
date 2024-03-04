@@ -81,11 +81,11 @@ h1 {
   color: white;
   transition: 0.5s ease;
   display: flex;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   justify-content: center;
   align-items: center;
 border: 2px solid white;
-    animation:cursorAnimation 3s linear infinite;
+    animation:cursorAnimation 2s linear infinite;
 }
 @keyframes cursorAnimation {
   0%{
