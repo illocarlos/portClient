@@ -3,7 +3,7 @@ import './WorkCardList.css'
 
 
 
-const WorkList = ({ title, name, description, workImage, link, _id, gitHub }) => {
+const WorkList = ({ title, description, workImage, link, _id, gitHub }) => {
 
 
 
