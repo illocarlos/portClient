@@ -81,12 +81,16 @@ h1 {
   color: white;
   transition: 0.5s ease;
   display: flex;
-  font-size: 0.9rem;
+     font-size: 0.9rem;
   justify-content: center;
   align-items: center;
 border: 2px solid white;
-    animation:cursorAnimation 2s linear infinite;
+    animation:cursorAnimation  2s linear infinite;
 }
+
+
+
+
 @keyframes cursorAnimation {
   0%{
     border: 2px solid red;
@@ -111,7 +115,6 @@ border: 2px solid white;
 
     100%{
           border: 2px solid pink;
-
 
   }
 }
