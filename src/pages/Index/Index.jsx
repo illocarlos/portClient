@@ -67,8 +67,8 @@ const Index = () => {
                                         className="ButtonEmail mt-1 d-none d-sm-inline"
                                         type="submit" title='send mail'>
 
-                                        <img className='openButton' src={'/close.png'} alt="mail" />
-                                        <img className='closeButton' src={'/open.png'} alt="mail" />
+                                        <img className='openButton' src={'/close.png'} alt="enviar mail" />
+                                        <img className='closeButton' src={'/open.png'} alt="enviar mail" />
 
 
                                     </Button>

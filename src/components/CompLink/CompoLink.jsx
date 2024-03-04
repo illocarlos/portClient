@@ -58,7 +58,7 @@ const CompoLink = () => {
 
             <Link className='button-CV  mr-3 d-none d-sm-inline'
                 to={'https://drive.google.com/file/d/1N6UJEGMv43T9To9OEnUhuIEsgMQNUAIc/view'}
-                target="_blank" alt="CV"  >
+                target="_blank" alt="Descargar CV"  >
                 CV
             </Link>
 
@@ -66,7 +66,7 @@ const CompoLink = () => {
                 to={"https://github.com/illocarlos"}
                 target="_blank" title='go to Git Hub'>
                 <div className='imageContainer'>
-                    <img className='Git' src={"/git.png"} alt="GitHub" />
+                    <img className='Git' src={"/git.png"} alt="Mi GitHub" />
                 </div>
             </Link>
 
@@ -74,7 +74,7 @@ const CompoLink = () => {
                 to={"https://www.linkedin.com/in/carlos-alberto-albendiz-paez-531107143/"}
                 title='go to  linkedln'>
                 <div className='imageContainer'>
-                    <img className='linked' src={"/linked.png"} alt="Linked" />
+                    <img className='linked' src={"/linked.png"} alt="Mi Linked" />
                 </div>
             </Link>
 
