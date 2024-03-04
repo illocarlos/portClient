@@ -49,7 +49,7 @@ const Index = () => {
                                     <Row>
 
                                         <Col md={2} className="order-1 order-md-1  d-none d-sm-inline ">
-                                            <img className='logoImg' src={"/akat.png"} />
+                                            <img alt="Elevar" className='logoImg' src={"/akat.png"} />
                                         </Col>
 
                                         <Col md={12} className="order-1 order-md-1  ">
