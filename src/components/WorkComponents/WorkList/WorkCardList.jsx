@@ -11,7 +11,7 @@ const WorkList = ({ title, name, description, workImage, link, _id, gitHub }) =>
     return (
         <div className="work-content" key={_id}>
 
-            <Link alt={`click ${name}`} to={`/work/${_id}`}>
+            <Link to={`/work/${_id}`}>
                 <div
                     className="work-avatar"
                     style={{ backgroundImage: `url(${workImage})` }}>
