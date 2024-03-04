@@ -44,7 +44,7 @@ const Index = () => {
 
                             <Link to={"/auth/login"} className=" ocultP ">.</Link>
 
-                            <Link className='logo' to="/">
+                            <Link alt="Elevar" className='logo' to="/">
                                 <div className='logoContainer mt-2'>
                                     <Row>
 
