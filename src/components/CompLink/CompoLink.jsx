@@ -15,7 +15,7 @@ const CompoLink = () => {
         setiIsShowDropdowm(showModal);
         setTimeout(() => {
             setiIsShowDropdowm(false)
-        }, 10000);
+        }, 30000);
     }
 
     useEffect(() => {
