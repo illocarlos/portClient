@@ -7,7 +7,7 @@ const WorkList = ({ works }) => {
     const { scrollY } = useScroll();
     const [visibleWorks, setVisibleWorks] = useState([]);
 
-    useMotionValueEvent(scrollY, "change", (latest) => {
+    useMotionValueEvent(scrollY, "change", () => {
         const visibleWorkIndices = works.reduce((acc, _, index) => {
             const element = document.getElementById(`work-${index}`);
             if (element) {
