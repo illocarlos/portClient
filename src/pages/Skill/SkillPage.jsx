@@ -9,6 +9,7 @@ const SkillPage = () => {
     const [isScrolledLaptopSkill, setIsScrolledLaptopSkill] = useState(false)
     const [isShowItem, setIsShowItem] = useState(false)
     const [isShowItemMobile, setIsShowItemMobile] = useState(false)
+    
     const { scrollY } = useScroll()
 
     useMotionValueEvent(scrollY, "change", (latest) => {

@@ -34,15 +34,17 @@ h1 {
 
 
 .c-cursor {
-  --size: 20px;
+  
+  --size: 20px;/* ya que vamos a usar esta medida mucho la declaramos  */
   position: fixed;
-  width: var(--size);
-  height: var(--size);
+  width: var(--size);/*le damos la anchura en relacion al codigo ya declarado */
+  height: var(--size);/*le damos la altura en relacion al codigo ya declarado */
+
   top: calc(var(--size) / -2);
   left: calc(var(--size) / -2);
   transform: translate(var(--cursor-x, -100px), var(--cursor-y, -100px)) translateZ(0);
   pointer-events: none;
-  transition: transform 0.00s ease-in-out; /* Ajustar la duración de la transición */
+  transition: transform 0.00s ease-in-out; /* Ajustar la duración de la transición la ponemos a 0 para que vaya a la velocidad del raton */
   z-index: 11000;
   will-change: transform;
 }

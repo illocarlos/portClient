@@ -10,6 +10,8 @@
      border-radius: 10%;
      animation: rotateProyect 6s linear infinite;
         transition: all 3s ease;
+          will-change: transform;
+
  }
 
  @keyframes rotateProyect {
@@ -37,6 +39,9 @@
      transform-origin: center;
      border-radius: 10%;
      animation: reduceDivProyect 2s ease; 
+       will-change: transform;
+
+     
  }
 
 @keyframes reduceDivProyect {
@@ -71,6 +76,8 @@
      z-index: -1;
      color: rgb(255, 255, 255);
         transition: all 2s ease;
+          will-change: transform;
+
 
 
 
@@ -81,6 +88,8 @@
      z-index: 1;
      color: rgba(0, 0, 0, 0);
         transition: all 2s ease;
+          will-change: transform;
+
 
  }
 
