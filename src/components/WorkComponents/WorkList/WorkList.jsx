@@ -23,6 +23,7 @@ const WorkList = ({ works }) => {
 
     useEffect(() => {
         const initialVisibleWorks = works.reduce((acc, _, index) => {
+
             const element = document.getElementById(`work-${index}`);
             if (element) {
                 const rect = element.getBoundingClientRect();
