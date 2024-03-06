@@ -21,8 +21,8 @@ function App() {
     const onMouseMove = (e) => {//e recibe el eventodel cursor que le va dando la informacion 
 
 
-      cursorEL.style.setProperty('--cursor-x', `${e.clientX}px`);//e.ClientX 
-      cursorEL.style.setProperty('--cursor-y', `${e.clientY}px`);
+      cursorEL.style.setProperty('--cursor-x', `${e.clientX}px`);//
+      cursorEL.style.setProperty('--cursor-y', `${e.clientY}px`);//
     };
 
     // Función para manejar el clic del mouse

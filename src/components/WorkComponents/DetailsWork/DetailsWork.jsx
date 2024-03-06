@@ -51,8 +51,8 @@ const DetailsWork = () => {
                                 {/* <div className="iconOrder"> */}
                                 <Row>
                                     {work.icon && work.icon.map((icon, index) => (
-                                        <Col key={index} sm={12} md={3} lg={4} className="iconOrder mt-lg-4">
 
+                                        <Col key={index} sm={4} md={3} lg={4} className="iconOrder mt-lg-4">
                                             {!work.icon ? (
                                                 <Loader />
                                             ) : (
@@ -76,11 +76,11 @@ const DetailsWork = () => {
 
                 </Col >
                 <Col sm={12} md={6} lg={6} className="order-sm-1 ">
-                    <div>
+                    <div className='div-img-responsive'>
                         {!work.icon ? (
                             <Loader />
                         ) : (
-                            <img className='work-image' src={work.workImage} alt={`image of proyect${work.title}`} />
+                            <img className='work-image' src={work.workImage} alt={work.title} />
                         )}
                     </div>
                 </Col>
