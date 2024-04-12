@@ -66,8 +66,8 @@ margin: 50% 30%;
 }
 
 .transformLink{
-    
-     color: inherit;
+text-decoration: none !important;
+     color: inherit !important;
 }
 .showMenu{
 animation: showModalMobile 2s ease forwards;
