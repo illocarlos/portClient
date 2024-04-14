@@ -224,6 +224,8 @@ transform: rotate( 28deg);
 
 /* detalles button translate */
 .block-btn-translate{
+    background-color: transparent;
+    border: none;
     margin-right: 2rem;
     height: 5rem;
     display: flex;
