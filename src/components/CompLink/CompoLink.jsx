@@ -52,7 +52,7 @@ const CompoLink = () => {
                             // to={'/Contact'}
                             onClick={() => setShowModal(true)}
                             type="submit" title='send mail'>
-                            <p>{isTranslate ? 'contactar' : 'contact'}</p>
+                            <p>{isTranslate ? 'contact' : 'contactar'}</p>
                         </Link>
                         <button
 
@@ -66,9 +66,11 @@ const CompoLink = () => {
 
             </div >
             <div className='block-btn-translate d-none d-sm-inline '>
-                <div className={isTranslate ? 'div-btn-animation' : 'div-btn-animation-reverse'}>
+                <div
+                    className={isTranslate ? 'div-btn-animation' : 'div-btn-animation-reverse'}>
                     <button
                         alt={isTranslate ? 'translate' : 'traducir'}
+
                         className='btn-translate'
                         onClick={switchTranslate}
                     >
