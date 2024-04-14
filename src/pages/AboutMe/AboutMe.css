@@ -1,0 +1,68 @@
+.articleAboutMe {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 20px;
+    font-size: 1.075rem;
+    color: rgb(255, 255, 255);
+    background-color: #000000d5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+}
+
+.imgContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.AritcleImg img {
+
+    width: 300px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.AritcleImg {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+
+@media (min-width: 700px) {
+
+    .PortFol {
+
+        background-image: url('/otrotro.jpg');
+        background-size: cover;
+        position: fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        z-index: -1;
+        position: relative;
+        transform-origin: top left;
+
+    }
+
+}
+
+
+.PortFol {
+
+    background-image: url('/otrotro.jpg');
+    background-size: cover;
+    position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    position: relative;
+    transform-origin: top left;
+
+}
