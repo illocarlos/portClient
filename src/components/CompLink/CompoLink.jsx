@@ -67,11 +67,12 @@ const CompoLink = () => {
             </div >
             <button
                 onClick={switchTranslate}
-                className='block-btn-translate d-none d-sm-inline '>
+                className='block-btn-translate d-none d-sm-inline '
+                alt={isTranslate ? 'translate' : 'traducir'}>
                 <div
                     className={isTranslate ? 'div-btn-animation' : 'div-btn-animation-reverse'}>
                     <button
-                        alt={isTranslate ? 'translate' : 'traducir'}
+
 
                         className='btn-translate'
                         onClick={switchTranslate}
