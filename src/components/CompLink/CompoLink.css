@@ -264,6 +264,7 @@ background-color: transparent;
 border: 2px solid red;
 color: red;
 border-radius: 15px;
+text-align: center;
 }
 
 .list-menu-dropdown button{
