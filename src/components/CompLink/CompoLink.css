@@ -269,7 +269,7 @@ background-color: red;
 
 }
 .flag-spain{
-background-image: url('../../../public/es.svg' );
+       background-image: url('../../../public/uk.svg' );
   background-size: cover; /* La imagen de fondo cubrirá todo el contenido del div */
   background-repeat: no-repeat; 
     animation: spin-horizontal 0.5s  linear forwards; /* Aplica la animación */
@@ -280,7 +280,7 @@ background-image: url('../../../public/es.svg' );
   100% { transform: rotateY(180deg); }
 }
 .flag-uk{
-    background-image: url('../../../public/uk.svg' );
+background-image: url('../../../public/es.svg' );
       background-size: cover; /* La imagen de fondo cubrirá todo el contenido del div */
   background-repeat: no-repeat; 
      animation: uk-horizontal 0.5s  linear forwards; 
