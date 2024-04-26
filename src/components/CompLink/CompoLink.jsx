@@ -4,6 +4,8 @@ import { Modal } from 'react-bootstrap'
 import { useContext, useState } from 'react'
 import Contact from '../Contact/Contact'
 import { TranslateContext } from '../../contexts/translate.context'
+// import { spainFlag } from
+// import { UKFlag } from '../../../public/gb.svg'
 
 const CompoLink = () => {
 
@@ -68,19 +70,17 @@ const CompoLink = () => {
             <button
                 onClick={switchTranslate}
                 className='block-btn-translate d-none d-sm-inline '
-                alt={isTranslate ? 'translate' : 'traducir'}>
-                <div
-                    className={isTranslate ? 'div-btn-animation' : 'div-btn-animation-reverse'}>
-                    <button
+                alt={isTranslate ? 'translate' : 'traducir'}
+            >
 
+                <button
 
-                        className='btn-translate'
-                        onClick={switchTranslate}
-                    >
-                        {isTranslate ? 'EN' : 'ES'}
-                    </button>
-                </div >
-            </button>
+                    alt={isTranslate ? 'translate' : 'traducir'}
+                    className={`btn-translate ${isTranslate ? 'flag-spain' : 'flag-uk'}`}
+                    onClick={switchTranslate} >
+
+                </button>
+            </button >
 
 
             <Link className='button-CV  mr-3 d-none d-sm-inline'
