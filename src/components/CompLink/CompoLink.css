@@ -228,12 +228,15 @@ transform: rotate( 28deg);
     border: none;
     margin-right: 2rem;
     height: 5rem;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    align-content: center;
+
 
 }
+.block-btn-translate-mb{
+      background-color: transparent;
+    border: none;
+    height: 5rem; 
+}
+
 .div-btn-animation{
 width: 5rem;
 height: 2rem;
@@ -256,6 +259,7 @@ border-radius: 15px;
 
 
 }
+
 
 .btn-translate{
     width: 2rem;
@@ -290,4 +294,11 @@ background-image: url('../../../public/es.svg' );
 @keyframes uk-horizontal {
   0% { transform: rotateY(0deg); }
   100% { transform: rotateY(-180deg); }
+}
+.btn-mbl{
+    width: 2rem;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 2rem;
 }

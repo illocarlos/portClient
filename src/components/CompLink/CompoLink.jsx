@@ -56,17 +56,27 @@ const CompoLink = () => {
                             type="submit" title='send mail'>
                             <p>{isTranslate ? 'contactar' : 'contact'}</p>
                         </Link>
-                        <button
 
+
+
+                        <button
                             onClick={switchTranslate}
+                            className='block-btn-translate-mb '
                         >
-                            {isTranslate ? 'EN' : 'ES'}
+                            <button
+
+                                alt={isTranslate ? 'translate' : 'traducir'}
+                                className={`btn-translate ${isTranslate ? 'flag-spain' : 'flag-uk'}`}
+                                onClick={switchTranslate} >
+
+                            </button>
                         </button>
                     </div>
 
                 </div>
 
             </div >
+
             <button
                 onClick={switchTranslate}
                 className='block-btn-translate d-none d-sm-inline '
