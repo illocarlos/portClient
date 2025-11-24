@@ -20,7 +20,8 @@
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
-    "react-scroll": "^1.9.0"
+    "react-scroll": "^1.9.0",
+    "three": "^0.181.2"
   },
   "devDependencies": {
     "@flydotio/dockerfile": "^0.5.2",

@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import me from '../../../public/me.jpg'
 import { TranslateContext } from '../../contexts/translate.context'
 import { useContext } from 'react'
+import LiquidEther from '../../components/LiquidEther/LiquidEther';
 const AboutMe = () => {
 
     const { isTranslate } = useContext(TranslateContext)
@@ -11,7 +12,36 @@ const AboutMe = () => {
     return (
         <>
             <article className='PortFol' >
+
+
+
+
+                <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+                    <LiquidEther
+                        colors={["#ea9090", "#b7491a", "#df2020"]}
+                        mouseForce={25}
+                        cursorSize={300}
+                        isViscous={true}
+                        viscous={30}
+                        iterationsViscous={32}
+                        iterationsPoisson={32}
+                        resolution={0.5}
+                        isBounce={false}
+                        autoDemo={true}
+                        autoSpeed={0.9}
+                        autoIntensity={3.2}
+                        takeoverDuration={0.25}
+                        autoResumeDelay={3000}
+                        autoRampDuration={0.6}
+                    />
+                </div>
+
+
+
+
                 <Container>
+
+
 
                     <Row className=" d-flex justify-content-center">
                         <Col md={6} className="order-1 order-md-1">
