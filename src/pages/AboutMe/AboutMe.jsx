@@ -20,7 +20,7 @@ const AboutMe = () => {
                     <LiquidEther
                         colors={["#ea9090", "#b7491a", "#df2020"]}
                         mouseForce={25}
-                        cursorSize={300}
+                        cursorSize={200}
                         isViscous={true}
                         viscous={30}
                         iterationsViscous={32}
