@@ -31,8 +31,8 @@ const AboutMe = () => {
                         autoSpeed={0.9}
                         autoIntensity={3.2}
                         takeoverDuration={0.25}
-                        autoResumeDelay={1000}
-                        autoRampDuration={0.6}
+                        autoResumeDelay={500}
+                        autoRampDuration={0.2}
                     />
                 </div>
 
