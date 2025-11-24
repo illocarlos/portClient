@@ -19,8 +19,8 @@ const AboutMe = () => {
                 <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
                     <LiquidEther
                         colors={["#ea9090", "#b7491a", "#df2020"]}
-                        mouseForce={100}
-                        cursorSize={300}
+                        mouseForce={300}
+                        cursorSize={130}
                         isViscous={true}
                         viscous={30}
                         iterationsViscous={32}
@@ -28,11 +28,11 @@ const AboutMe = () => {
                         resolution={0.5}
                         isBounce={false}
                         autoDemo={true}
-                        autoSpeed={0.9}
+                        autoSpeed={0.1}
                         autoIntensity={3.2}
                         takeoverDuration={0.25}
                         autoResumeDelay={500}
-                        autoRampDuration={0.2}
+                        autoRampDuration={0.1}
                     />
                 </div>
 
