@@ -5,6 +5,8 @@ import me from '../../../public/me.png'
 import { TranslateContext } from '../../contexts/translate.context'
 import { useContext } from 'react'
 import LiquidEther from '../../components/LiquidEther/LiquidEther';
+import Galaxy from '../../components/Galaxy/Galaxy';
+
 const AboutMe = () => {
 
     const { isTranslate } = useContext(TranslateContext)
@@ -16,7 +18,7 @@ const AboutMe = () => {
 
 
 
-                <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+                <div className="d-none d-lg-block" style={{ width: '100%', height: '100%', position: 'absolute' }}>
                     <LiquidEther
                         colors={["#ea9090", "#b7491a", "#df2020"]}
                         mouseForce={300}
@@ -35,6 +37,22 @@ const AboutMe = () => {
                         autoRampDuration={0.1}
                     />
                 </div>
+
+
+
+
+
+                <div className="d-blobk d-lg-none" style={{ width: '100%', height: '100%', position: 'absolute' }}>
+                    <Galaxy
+                        mouseRepulsion={true}
+                        mouseInteraction={true}
+                        density={1.0}
+                        glowIntensity={0.4}
+                        saturation={0.0}
+                        hueShift={0}
+                    />
+                </div>
+
 
 
 
