@@ -5,7 +5,7 @@ import me from '../../../public/me.png'
 import { TranslateContext } from '../../contexts/translate.context'
 import { useContext } from 'react'
 import LiquidEther from '../../components/LiquidEther/LiquidEther';
-import Galaxy from '../../components/Galaxy/Galaxy';
+import Lightning from '../../components/Lightning/Lightning';
 
 const AboutMe = () => {
 
@@ -43,13 +43,12 @@ const AboutMe = () => {
 
 
                 <div className="d-blobk d-lg-none" style={{ width: '100%', height: '100%', position: 'absolute' }}>
-                    <Galaxy
-                        mouseRepulsion={true}
-                        mouseInteraction={true}
-                        density={1.0}
-                        glowIntensity={0.4}
-                        saturation={0.0}
-                        hueShift={0}
+                    <Lightning
+                        hue={360}
+                        xOffset={0}
+                        speed={1}
+                        intensity={0.1}
+                        size={3}
                     />
                 </div>
 
