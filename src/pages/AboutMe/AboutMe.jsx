@@ -1,7 +1,7 @@
 
 import './AboutMe.css'
 import { Container, Row, Col } from 'react-bootstrap'
-import me from '../../../public/me.png'
+import me from '../../../public/me.webp'
 import { TranslateContext } from '../../contexts/translate.context'
 import { useContext } from 'react'
 import LiquidEther from '../../components/LiquidEther/LiquidEther';
