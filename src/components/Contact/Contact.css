@@ -12,3 +12,8 @@
     cursor: none !important;
 background-color: black;
 }
+
+.btn-primary:active{
+    background: black!;
+    color: red;
+}

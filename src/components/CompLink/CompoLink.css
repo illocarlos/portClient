@@ -15,7 +15,14 @@
 .block-navbar{
     background-color: blue;
 }
+.ButtonEmail{
+    border: none  !important;
+}
 
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: none !important;
+}
 
 .linkGit:hover .Git,
 .linklinked:hover .linked,

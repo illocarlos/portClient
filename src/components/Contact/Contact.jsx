@@ -21,7 +21,6 @@ const Contact = ({ setShowModal }) => {
 
         const { value, name } = e.currentTarget
         setContactData({ ...contactData, [name]: value })
-
     }
 
 
@@ -30,6 +29,7 @@ const Contact = ({ setShowModal }) => {
 
         e.preventDefault()
 
+
         contactService
             .saveContacts(contactData)
             .then(() => {
@@ -37,6 +37,7 @@ const Contact = ({ setShowModal }) => {
             })
             .catch(err => console.log(err))
             .finally(() => {
+
                 navigate('/')
             })
 
