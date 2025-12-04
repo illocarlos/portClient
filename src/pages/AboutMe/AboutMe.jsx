@@ -2,6 +2,7 @@
 import './AboutMe.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import me from '../../../public/me.webp'
+import hoverMe from '../../../public/hover-me.webp'
 import { TranslateContext } from '../../contexts/translate.context'
 import { useContext } from 'react'
 import LiquidEther from '../../components/LiquidEther/LiquidEther';
@@ -112,8 +113,12 @@ const AboutMe = () => {
                         <Col md={6} className="imgContainer order-2 order-md-2 ">
                             <Col sm={12} className='mt-4'>
 
-                                <div className='AritcleImg'>
-                                    <img src={me} alt="" />
+                                <div className='AritcleImg d-none d-xl-block article-img-container'>
+                                    <img className="article-img-primary" src={me} alt="" />
+                                    <img className="article-img-hover" src={hoverMe} alt="" />
+                                </div>
+                                <div className='AritcleImg d-block d-xl-none'>
+                                    <img className="" src={hoverMe} alt="" />
                                 </div>
 
                             </Col>

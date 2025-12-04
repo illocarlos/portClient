@@ -49,6 +49,57 @@
     }
 
 }
+.AritcleImg img{
+    height: 700px;
+    object-fit: cover;
+}
+
+
+
+.AritcleImg img{
+    height: 700px;
+    object-fit: cover;
+}
+
+
+
+
+
+.article-img-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 10; /* Sube el contexto de apilamiento completo */
+}
+
+.article-img-primary {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.article-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.article-img-container:hover .article-img-primary {
+    opacity: 0;
+}
+
+.article-img-container:hover .article-img-hover {
+    opacity: 1;
+}
+
+
+
+
 
 
 .PortFol {
